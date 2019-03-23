@@ -1,4 +1,4 @@
-# mobile_computing_lab
+# Mobile Computing Lab @ TUGraz
 
 - [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/WS1_0_Organization.ipynb)
 - [Workshop 1: Sensors and signals, activity recognition](https://github.com/osaukh/mobile_computing_lab/blob/master/WS1_1_Sensors_and_Signals.ipynb)
