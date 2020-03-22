@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DB6FB</color>
+    <color name="colorPrimaryDark">#086788</color>
+    <color name="colorAccent">#1DB6FB</color>
+
+    <color name="colorWarning">#F4D74B</color>
+    <color name="colorError">#DD1C1A</color>
+
+    <color name="chartPoint">#DD1C1A</color>
+
+    <color name="colorBackground">#FFFDF9</color>
+    <color name="colorBackgroundHighlight">#F4F2F3</color>
+    <color name="colorBackgroundTransparent">#E6FFFDF9</color>
+
+    <color name="colorIconPrimary">#2D2A32</color><!--262626-->
+    <color name="colorFontPrimary">#141414</color>
+    <color name="colorFontSecondary">#87878B</color><!--D3D4D9-->
+    <color name="colorFontTertiary">#DADCE0</color>
+
+    <color name="status_bar">#202124</color>
+    <color name="dark_gray">#ff808080</color>
+    <color name="indigo_transparent">#e54768fd</color> <!-- 90% indigo -->
+
+</resources>
