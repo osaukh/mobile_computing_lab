@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try {
                     mClassifiers.add(
                             TensorFlowLiteClassifier.create(getAssets(), "TensorFlowLite",
-                                "opt_mnist_convnet2.tflite", "labels.txt"));
+                                "converted_model.tflite", "labels.txt"));
                 } catch (final Exception e) {
                     throw new RuntimeException("Error initializing classifiers!", e);
                 }
