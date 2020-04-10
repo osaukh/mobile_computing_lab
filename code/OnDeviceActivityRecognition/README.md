@@ -2,7 +2,9 @@
 
 This folder provide an end-to-end solution for on-device training, inference and data collection for activity recongition based on <a href="https://github.com/tensorflow/examples/tree/master/lite/examples/model_personalization">TFlite Transfer Learning Pipeline</a>. The corresponding blog post is available <a href="https://aqibsaeed.github.io/on-device-activity-recognition">here</a>. 
 
-<img src="https://github.com/osaukh/mobile_computing_lab/blob/master/code/OnDeviceActivityRecognition/screenshot.png" width="300px" align="middle">
+<p align="center">
+<img src="https://github.com/osaukh/mobile_computing_lab/blob/master/code/OnDeviceActivityRecognition/screenshot.png" width="300px">
+</p>
 
 This project is part of the [Workshop Transfer Learning, Mobile Computing Lab @ TU Graz](https://github.com/osaukh/mobile_computing_lab/blob/master/2020-04-20__WS5_0__Transfer_Learning.ipynb)
 
