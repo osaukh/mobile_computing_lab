@@ -1,0 +1,3 @@
+[console_scripts]
+tflite-transfer-convert = tfltransfer.tflite_transfer_convert:main
+
