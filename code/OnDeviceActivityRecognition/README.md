@@ -1,9 +1,14 @@
-# On-device Activity Recognition
-#### Personalized machine learning on the smartphone
+# Activity Recognition with Transfer Learning
 
-The aim of the project is to provide an end-to-end solution for on-device training, inference and data collection for activity recongition based on <a href="https://github.com/tensorflow/examples/tree/master/lite/examples/model_personalization">TFlite Transfer Learning Pipeline</a>. The corresponding blog post is available <a href="https://aqibsaeed.github.io/on-device-activity-recognition">here</a>. 
+This folder provide an end-to-end solution for on-device training, inference and data collection for activity recongition based on <a href="https://github.com/tensorflow/examples/tree/master/lite/examples/model_personalization">TFlite Transfer Learning Pipeline</a>. The corresponding blog post is available <a href="https://aqibsaeed.github.io/on-device-activity-recognition">here</a>. 
 
-#### Tools Required
+<img src="https://github.com/osaukh/mobile_computing_lab/blob/master/code/OnDeviceActivityRecognition/screenshot.png" width="300px">
+
+
+This project is part of the [Workshop Transfer Learning, Mobile Computing Lab @ TU Graz](https://github.com/osaukh/mobile_computing_lab/blob/master/2020-04-20__WS5_0__Transfer_Learning.ipynb)
+
+
+#### Requirements
 * Python 3.5+
 * Tensorflow 2.0.0rc0
 * Numpy
@@ -11,17 +16,9 @@ The aim of the project is to provide an end-to-end solution for on-device traini
 * Scipy
 * Android Studio
 
-#### Contribute (Future Work)
-* Add support for pairing the app with a smartwatch and fine-tuning the model for a wearable device.
-* Port SoundNet, add functionality for audio recording and tflite model conversion for handling dynamic size input.
+#### Credit
 
-If you are interested in contributing to this project, please submit a pull request or reach out at: aqibsaeed@protonmail.com.
-
-#### Dataset 
-The <a href="https://archive.ics.uci.edu/ml/datasets/Heterogeneity+Activity+Recognition">Heterogeneity Activity Recognition dataset</a> is used for model pretraining. If you use this in your research, please cite their work and check the license. 
-
-#### Citing
-If you find this project usefuly, please cite it as:
+Thanks to <a href="https://aqibsaeed.github.io/on-device-activity-recognition">Aaqib Saeed</a> who open sourced his <a href="https://github.com/aqibsaeed/on-device-activity-recognition">code</a> on which this tutorial is based.
 
 <pre>@misc{saeed2020recognition, 
   author = {Saeed, Aaqib},
