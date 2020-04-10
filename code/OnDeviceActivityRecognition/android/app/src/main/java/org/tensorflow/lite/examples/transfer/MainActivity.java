@@ -44,15 +44,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
   SensorManager mSensorManager;
   Sensor mAccelerometer;
-//  Sensor mGyroscope;
   TransferLearningModelWrapper tlModel;
   String classId;
+
   static List<Float> x_accel;
   static List<Float> y_accel;
   static List<Float> z_accel;
-//  static List<Float> x_gyro;
-//  static List<Float> y_gyro;
-//  static List<Float> z_gyro;
 
   static List<Float> input_signal;
 
@@ -106,16 +103,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     x_accel = new ArrayList<Float>();
     y_accel = new ArrayList<Float>();
     z_accel = new ArrayList<Float>();
-//    x_gyro= new ArrayList<Float>();
-//    y_gyro = new ArrayList<Float>();
-//    z_gyro = new ArrayList<Float>();
     input_signal = new ArrayList<Float>();
 
     mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
     mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-//    mGyroscope = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
     mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_FASTEST);
-//    mSensorManager.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_FASTEST);
     tlModel = new TransferLearningModelWrapper(getApplicationContext());
 
     optionSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -207,7 +199,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
   protected void onResume() {
     super.onResume();
     mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_FASTEST);
-//    mSensorManager.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_FASTEST);
   }
 
   protected void onDestroy() {
@@ -223,15 +214,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
       case Sensor.TYPE_ACCELEROMETER:
         x_accel.add(event.values[0]); y_accel.add(event.values[1]); z_accel.add(event.values[2]);
         break;
-//      case Sensor.TYPE_GYROSCOPE:
-//        x_gyro.add(event.values[0]); y_gyro.add(event.values[1]); z_gyro.add(event.values[2]);
-//        break;
     }
 
     //Check if we have desired number of samples for sensors, if yes, the process input.
-    if(x_accel.size() == NUM_SAMPLES && y_accel.size() == NUM_SAMPLES &&
-            z_accel.size() == NUM_SAMPLES) {
-//      && x_gyro.size() == NUM_SAMPLES && y_gyro.size() == NUM_SAMPLES && z_gyro.size() == NUM_SAMPLES)
+    if(x_accel.size() == NUM_SAMPLES && y_accel.size() == NUM_SAMPLES && z_accel.size() == NUM_SAMPLES) {
       processInput();
     }
   }
@@ -248,9 +234,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         input_signal.add(x_accel.get(i));
         input_signal.add(y_accel.get(i));
         input_signal.add(z_accel.get(i));
-//        input_signal.add(x_gyro.get(i));
-//        input_signal.add(y_gyro.get(i));
-//        input_signal.add(z_gyro.get(i));
         i++;
       }
 
@@ -286,6 +269,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         else if (mode == Mode.Inference) {
           Prediction[] predictions = tlModel.predict(input);
           // Vibrate the phone if Class B is detected.
+          Log.d("Class A:", String.valueOf(predictions[0].getConfidence()));
+          Log.d("Class B:", String.valueOf(predictions[1].getConfidence()));
+
           if(predictions[1].getConfidence() > VB_THRESHOLD)
             vibrator.vibrate(VibrationEffect.createOneShot(200,
                     VibrationEffect.DEFAULT_AMPLITUDE));
@@ -300,7 +286,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
       // Clear all the values
       x_accel.clear(); y_accel.clear(); z_accel.clear();
-//      x_gyro.clear(); y_gyro.clear(); z_gyro.clear();
       input_signal.clear();
   }
 
