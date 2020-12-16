@@ -12,3 +12,7 @@
 - [Progress Review](https://github.com/osaukh/mobile_computing_lab/blob/master/2020-05-11__Progress_Review.ipynb)
 - On-demand individual coaching
 - [Final Demo and Report](https://github.com/osaukh/mobile_computing_lab/blob/master/2020-06-08__Final_Demo_and_Report.ipynb)
+
+
+# Completed projects
+See: [Examples of Successfully Completed Projects](http://www.olgasaukh.com/mcl.html)
