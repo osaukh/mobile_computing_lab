@@ -22,6 +22,7 @@ import java.nio.ByteOrder;
 import java.nio.channels.GatheringByteChannel;
 import java.nio.channels.ScatteringByteChannel;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
@@ -367,7 +368,7 @@ public final class TransferLearningModel implements Closeable {
         predictions[classIdx] = new Prediction(classesByIdx[classIdx], confidences[classIdx]);
       }
 
-      //Arrays.sort(predictions, (a, b) -> -Float.compare(a.confidence, b.confidence));
+      Arrays.sort(predictions, (a, b) -> -Float.compare(a.confidence, b.confidence));
       return predictions;
     } finally {
       inferenceLock.unlock();

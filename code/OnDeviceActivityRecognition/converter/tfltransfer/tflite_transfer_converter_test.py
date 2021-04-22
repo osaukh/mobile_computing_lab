@@ -47,7 +47,7 @@ class TestTfliteTransferConverter(unittest.TestCase):
             units=DEFAULT_INPUT_SIZE, input_shape=(DEFAULT_INPUT_SIZE,))
     ])
     model.build()
-    tf.keras.experimental.export_saved_model(model, cls._default_base_model_dir)
+    model.save(cls._default_base_model_dir, save_format='tf')
 
   def setUp(self):
     super(TestTfliteTransferConverter, self).setUp()

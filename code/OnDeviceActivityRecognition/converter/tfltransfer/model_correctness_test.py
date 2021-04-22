@@ -348,7 +348,7 @@ class ModelCorrectnessTest(unittest.TestCase):
         input_shape=(IMAGE_SIZE, IMAGE_SIZE, 3),
         include_top=False,
         weights='imagenet')
-    tf.keras.experimental.export_saved_model(mobilenet_keras, mobilenet_dir)
+    mobilenet_keras.save(mobilenet_dir, save_format='tf')
     cls.mobilenet_dir = mobilenet_dir
 
   def setUp(self):
