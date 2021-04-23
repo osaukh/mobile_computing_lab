@@ -35,7 +35,7 @@ enum Mode {
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener  {
 
-  final int NUM_SAMPLES = 80;
+  final int NUM_SAMPLES = 200;
   double VB_THRESHOLD = 0.75;
 
   int classAInstanceCount = 0;
