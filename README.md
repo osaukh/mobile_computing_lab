@@ -1,6 +1,8 @@
 # Mobile Computing Lab (448.066) @ TUGraz
 
-### Course outline in SS'21:
+The course provides an introduction to the current research trends in the area of smartphones. The course will be based on a programming project, where students will form groups of two to develop a smartphone app for Android. To program a smartphone app, a developer needs to be familiar with (1) the signals and data that smartphones can gather, and (2) the mathematical tools necessary to process this data. We will use state-of-the-art algorithms, signal processing, and machine learning techniques to develop exciting mobile applications.
+
+### Course schedule in SS'21:
 
 *    2021-03-17 -- [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-03-17__Course_Organization.ipynb)
 *    2021-03-17 -- [Workshop 1: Sensors and signals, activity monitoring](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-03-17__WS1_0__Sensors_and_Signals.ipynb)
