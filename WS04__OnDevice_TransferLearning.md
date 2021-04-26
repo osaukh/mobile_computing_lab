@@ -79,7 +79,7 @@ The Android application shows how to light-retrain a model (transfer learning) a
 
 Follow the steps to train a generic base model:
 
-<table class="tfo-notebook-buttons" align="left" style="float:none;">
+<table>
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--BaseModel.ipynb">
     <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
@@ -98,7 +98,7 @@ Feel free to modify the model and improve it.
 
 Follow the steps to create a simple head model:
 
-<table class="tfo-notebook-buttons" align="left" style="float:none;">
+<table>
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--HeadModel.ipynb">
     <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
@@ -116,7 +116,7 @@ Feel free to modify the model and extend it to 4 classes (it currently supports 
 #### Step 3: Integrate transfer learning into your own app
 
 Run an example app with your custom-made model with 2 classes:
-<table class="tfo-notebook-buttons" align="left" style="float:none;">
+<table>
   <td>
     <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--Application.ipynb">
     <img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />
