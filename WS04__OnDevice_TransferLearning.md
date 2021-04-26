@@ -1,18 +1,18 @@
-# WS4_0 Transfer Learning on Mobile Devices
+# Workshop 4: On-device Transfer Learning
+
 
 ### Activity Monitoring: What should you have by now?
 
 If you decided to go for Option 1, you should have a mobile app providing the following functionality:
-* Gathering sensor data (from accelerometer, gyroscope, etc.)
-* Extracting features from this data
-* Using kNN (or another method) to attribute the feature vector to the right activity. The model parameters are determined offline using your own data set.
+*    Gathering sensor data (from accelerometer, gyroscope, etc.)
+*    Extracting features from this data
+*    Using kNN (or another method) to attribute the feature vector to the right activity. The model parameters are determined offline using your own data set.
 
 Your app should be fairly accurate when tested with a smartphone held and fixed in the same position on your body as when gathering training data. If you change the position (e.g., by rotating the phone or fixing it to your leg instead of your arm) your activitiy recognition may (and most probably will) fail because measured signal will look fairly different (see below). In this workshop you will learn how one can address the problem with __on-device transfer learning__. We will create a generic model and personalize it on the phone.
 
 <img src="img/sensors/project_option_1_acceleration_data.png" width="600">
 
-
-### Transfer Learning for Model Personalization
+### Model Personalization by Transfer Learning
 
 Transfer learning is inspired by the way human learners take advantage of their existing knowledge and skills: A human who knows how to read literature is more likely to succeed in reading scientific papers than a human who does not know how to read at all. In the context of supervised learning, transfer learning implies the ability to reuse the knowledge of the dependency structure between features and labels learned in one setting to improve the inference of the dependency structure in another setting.
 
@@ -25,9 +25,7 @@ Transfer learning involves using a pre-trained model for one “data-rich” tas
 
 <img src="https://miro.medium.com/max/1400/1*Bi-_rpBbfhVAz6gi1uIRnw.png" width="800">
 
-<div class="alert alert-block alert-info">
-With transfer learning we can train personalized models <b>on-device</b> even with <b>limited training data and computational resources</b> while <b>preserving user privacy</b>.
-</div>
+With transfer learning we can train personalized models __on-device__ even with __limited training data and computational resources__ while __preserving user privacy__.
 
 ### Example: On-device Transfer Learning for Object Detection
 
@@ -48,7 +46,7 @@ This example includes a set of easily reusable tools that make it easy to create
 
 <img src="https://4.bp.blogspot.com/-vfNgyvvXghI/Xehr7LQTXNI/AAAAAAAABdM/OM7OY69jppExAqulrzu805h8iZJF1YPwgCLcBGAsYHQ/s1600/sDAezIApe_pdRnU8tGB0Vfg.png" width="400">
 
-#### Converter
+__Transfer Learning Converter__ (uses TF Lite Converter):
 
 To generate a transfer learning model for your task, you need to pick two models that will form it:
 * __Base model__ that is typically a deep neural network pre-trained on a generic data-rich task.
@@ -56,34 +54,31 @@ To generate a transfer learning model for your task, you need to pick two models
 
 The model should be created with TensorFlow.
 
-#### Android library
+__On-device Android library__ (uses TF Lite Interpreter):
 
 The transfer learning model produced by the transfer learning converter cannot be used directly with the TensorFlow Lite interpreter. An intermediate layer is required to handle the non-linear lifecycle of the model. This is done by the Android library (iOS is not yet supported). The Android library is hosted as a part of the example, but it lives in a stand-alone Gradle module so it can be easily integrated into any Android application.
 
-#### Application
+__Application:__
 
 The Android application shows how to light-retrain a model (transfer learning) and do inference using that model.
 
-<div class="alert alert-block alert-success">
-<b>Run this app on your device and understand the source code:</b>
-<ul><li>
-<a href="https://github.com/tensorflow/examples/tree/master/lite/examples/model_personalization">TensorFlow Lite Example On-device Model Personalization</a>
-</li></ul>
-</div>
+
+#### Run this app on your device and understand the source code:
+*    [TensorFlow Lite Example On-device Model Personalization](https://github.com/tensorflow/examples/tree/master/lite/examples/model_personalization)
 
 
 ***
 
-# Your Task: Activity Monitoring & Transfer Learning (Option 1)
+# Your Task: Personalized Activity Monitoring with Transfer Learning
 
 <img src="img/project_options4.png" width="800">
 
-### Cookbook
+## Cookbook
 
-#### Step 1: Create a base model using an existing data set
+#### Step 1: Create a base model using an existing data set__
 
-<div class="alert alert-block alert-success">
-<b>Follow the steps to train a generic base model</b>
+Follow the steps to train a generic base model:
+
 <table class="tfo-notebook-buttons" align="left" style="float:none;">
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--BaseModel.ipynb">
@@ -96,14 +91,13 @@ The Android application shows how to light-retrain a model (transfer learning) a
     View source on GitHub</a>
   </td>
 </table>
-</div>
 
 Feel free to modify the model and improve it.
 
 #### Step 2: Create a simple head model
 
-<div class="alert alert-block alert-success">
-<b>Follow the steps to create a simple head model</b>
+Follow the steps to create a simple head model:
+
 <table class="tfo-notebook-buttons" align="left" style="float:none;">
   <td>
     <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--HeadModel.ipynb">
@@ -116,14 +110,12 @@ Feel free to modify the model and improve it.
     View source on GitHub</a>
   </td>
 </table>
-</div>
 
 Feel free to modify the model and extend it to 4 classes (it currently supports 2).
 
 #### Step 3: Integrate transfer learning into your own app
 
-<div class="alert alert-block alert-success">
-<b>Run an example app with your custom-made model with 2 classes</b>
+Run an example app with your custom-made model with 2 classes:
 <table class="tfo-notebook-buttons" align="left" style="float:none;">
   <td>
     <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/workshops/WS04--TransferLearning--Application.ipynb">
@@ -131,7 +123,6 @@ Feel free to modify the model and extend it to 4 classes (it currently supports 
     View on GitHub</a>
   </td>
 </table>
-</div>
 
 Extend your own activity recognition app (which uses kNN or another method) to provide the following functionality:
 * Continue using kNN implementation
@@ -141,7 +132,7 @@ Extend your own activity recognition app (which uses kNN or another method) to p
 
 #### Step 4: Compare model performance
 
-Compare the performance of the three models on a self-defined set of tests. The test set should be the same for all three models. Log test result into a file and present these in your report!
+Compare the performance of the three models on a self-defined set of tests. The test set should be the same for all three models. Include confusion matrices for each model. Present the results in your report!
 
 #### Step 5: Final demo
 
