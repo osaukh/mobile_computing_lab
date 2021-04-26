@@ -9,14 +9,14 @@
 *    2021-04-14 -- __No class__
 *    2021-04-21 -- On-demand individual coaching
 *    2021-04-28 -- Demos (option 1), [Workshop 4: On-device transfer learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_TransferLearning.md)
-*    2021-05-05 -- [Progress Review (option 2)](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-05-05__Progress_Review.ipynb)
+*    2021-05-05 -- [Progress Review (option 2)](https://github.com/osaukh/mobile_computing_lab/blob/master/Progress_Reviews.ipynb)
 *    2021-05-12 -- __No class__
 *    2021-05-19 -- On-demand individual coaching
 *    2021-05-26 -- On-demand individual coaching
-*    2021-06-02 -- [Progress Review (options 1,2)](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-06-02__Progress_Review.ipynb)
+*    2021-06-02 -- [Progress Review (options 1,2)](https://github.com/osaukh/mobile_computing_lab/blob/master/Progress_Reviews.ipynb)
 *    2021-06-09 -- On-demand individual coaching
 *    2021-06-16 -- __No class__
-*    2021-06-23 -- [Final Demos and Report](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-06-23__Final_Demo_and_Report.ipynb)
+*    2021-06-23 -- [Final Demos and Report](https://github.com/osaukh/mobile_computing_lab/blob/master/Final_Demo_and_Report.ipynb)
 
 
 ### Completed projects
