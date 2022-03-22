@@ -61,7 +61,9 @@ The course is for new and experienced developers who already have Java programmi
 The course is based on a programming project. Two options are available:
 
 #### Option 1: Activity monitoring and tranfer learning
-The project is for beginners and consists of two parts: First, you will read sensor data provided by your phone (e.g., acceleration values) and use different algorithms (e.g., kNN) to detect the type of activity (e.g., jogging, walking, sitting, standing) you are currently doing. In the second part of the project, you will have to change the location of your phone (e.g., hold it in your hand instead of in your pocket) and use transfer learning to adjust the model quickly on your device.
+The project is for beginners and consists of two parts: First, you will read sensor data provided by your phone (e.g., acceleration values) and use different algorithms (e.g., kNN) to detect the type of activity you are currently performing. In the second part of the project, you will have to change the location of your phone (e.g., hold it in your hand instead of in your pocket) and use transfer learning to adjust the model quickly on your device. 
+
+_Your list of activities must be: (1) walking, (2) jogging, (3) jumping, (4) squatting, (5) sitting, (6) standing._
     
 <img src="img/sensors/project_option_1_acceleration_data.png" width="600">
 
