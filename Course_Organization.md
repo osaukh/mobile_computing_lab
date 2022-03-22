@@ -1,15 +1,15 @@
-# 2021-03-17 Course Organization
+# 2022-03-23 Course Organization
 
 ## Basic Information
  
-*   TUG Online: [Mobile Computing Lab (MCL), SS'21](https://online.tugraz.at/tug_online/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=236527)
+*   TUG Online: [Mobile Computing Lab (MCL), SS'22](https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=256443)
 *   Instructor: [Olga Saukh](http://www.olgasaukh.com) ([TUG business card](https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=BC91EB43629EBA38"))
 *   TA: Peter Prodinger (peter.prodinger at student.tugraz.at)
 *   [MCL course materials on GitHub](https://github.com/osaukh/mobile_computing_lab)
 
-MCL starts on __Wed, 17.03.2020 at 3pm__ over Webex. Access details can be found under "Announcements" in the TeachCenter and were sent per email.
+MCL starts on __Wed, 23.03.2022 at 3pm__ over Webex. Access details can be found under "Announcements" in the TeachCenter.
 
-Join the __MCL Slack channel__ to connect to other students enrolled in the class. Access details can be found under "Announcements" in the TeachCenter and were sent per email.
+Join the __MCL Slack channel__ to connect to other students enrolled in the class. Access details can be found under "Announcements" in the TeachCenter.
 
 
 ## Content
@@ -21,7 +21,7 @@ To program a smartphone app, a developer needs to be familiar with:
 2. Data science and machine learning tools necessary to process sensor data, and
 3. How to run sensor data processing algorithms and models on a smartphone.
 
-This course will provide a solid background for the above points. During the workshops we will look into the state-of-the-art in this emerging field. We will look into a few technologies and papers to understand how algorithms, signal processing, and machine learning tools are used to develop some exciting applications. The students will then use these basic tools to develop their own apps.
+This course will provide a solid background for the above points. During the workshops we will get familiar with the state-of-the-art in this emerging field. We will look into a few technologies and papers to understand how algorithms, signal processing, and machine learning tools are used to develop some exciting applications. The students will then use these basic tools to develop their own apps.
     
 <img src="img/intro/course_content.png" width="800">
 
@@ -31,11 +31,11 @@ This course will provide a solid background for the above points. During the wor
 Workshops will help you to get started with the topics:
 *   [Workshop 1 -- Sensors and signals: Android, sensors, activity recognition](2021-03-17__WS1_0__Sensors_and_Signals.ipynb)
 *   [Workshop 2 -- Speech processing in mobile applications](2021-03-24__WS2_0__Speech_Processing.ipynb)
-*   [Workshop 3 -- TensorFlow Lite: Machine learning on mobile devices](2021-03-24__WS3_0__TensorFlow.ipynb)
+*   [Workshop 3 -- TensorFlow and TF Lite: Machine learning on mobile devices](2021-03-24__WS3_0__TensorFlow.ipynb)
 *   [Workshop 4 -- Activity monitoring and transfer learning](WS04__OnDevice_TransferLearning.md)
 
 
-Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx. Code troubleshooting: use __Slack for asking questions__. Last resort: send an email to Peter (peter.prodinger at student.tugraz.at) or Olga (saukh at tugraz.at) and schedule a separate appointment.
+Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx. Code troubleshooting: use __Slack for asking questions__. Attend in-person Q&A sessions and ask Peter for help or send him an email (peter.prodinger at student.tugraz.at). Last resort: send an email to Olga (saukh at tugraz.at) and schedule a separate appointment.
 
 
 ## Schedule
