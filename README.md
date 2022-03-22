@@ -6,10 +6,10 @@ The course provides an introduction to the current research trends in the area o
 
 *    __2022-03-23 - WebEx__ 
 		* [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/Course_Organization.md)
-		* [Workshop 1: Sensors and signals, activity monitoring](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-03-17__WS1_0__Sensors_and_Signals.ipynb)
+		* [Workshop 1: Sensors and signals, activity monitoring](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
 *    __2022-03-30 - WebEx__ 
-		* [Workshop 2: Speech processing on a mobile phone](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-03-24__WS2_0__Speech_Processing.ipynb)
-		* [Workshop 3: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/2021-03-24__WS3_0__TensorFlow.ipynb)
+		* [Workshop 2: Speech processing on a mobile phone](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__Speech_Processing.md)
+		* [Workshop 3: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__TensorFlow_and_TFLite.md)
 *    2022-04-06 - Lab: Individual coaching (Peter)
 *    2022-04-27 - WebEx and Lab: Individual coaching (Olga and Peter)
 *    __2022-05-04 - WebEx__ 
