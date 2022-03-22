@@ -90,28 +90,6 @@ Expected path:
 
 Check examples of <a href="http://www.olgasaukh.com/mcl.html">successfully completed MCL projects</a>.
 
-#### Ideas for speech recognition
-
-Perform speech processing __locally and in real time on your smartphone__. You may choose to detect and assess the following acoustic events:
-   1. Word counting (see: <a href="https://www.researchgate.net/publication/263272600_A_Speech_System_for_Estimating_Daily_Word_Counts">A Speech System for Estimating Daily Word Counts</a>, INTERSPEECH 2014)
-   2. Filler word detection (e.g., ehm, ahm, like, basically, eh, ah, see: <a href="https://www.youtube.com/watch?v=MNrD-6W3GkI">English Filler Words</a>)
-   3. Detecting speaker's mood in different blocks of a talk (see <a href="https://zenodo.org/record/1188976#.Xm5acS3Mz_Q">RAVDESS data set</a>)
-
-#### Ideas for image processing
-
-You can build on existing pre-trained models for object detection broadly available online. Some potentially interesting directions to think about:
-   1. Deriving social distance from camera images: [Machine learning could check if you’re social distancing properly at work](https://www.technologyreview.com/2020/04/17/1000092/ai-machine-learning-watches-social-distancing-at-work)
-   
-#### Where to start looking for own project ideas?
-Scientific papers:
-   * In Google scholar (<a href="http://scholar.google.com">scholar.google.com</a>) type "smartphone TOPIC".
-   * The following conferences have some cool papers in the area: Mobisys, Mobicom, Sensys, IPSN, Percom, Ubicomp. In Google, type: "CONFERENCE_NAME YEAR", for example: “Mobisys 2020”, then go to the “Program” tab in that webpage.  
-   * To expand on an area that you find interesting, follow the citations in papers (past) and the links that cite these papers (future).
-
-Apps:
-   * Reverse engineer an app that you like. 
-   * Think of new apps. For example: real-time pub monitoring in Graz, real-time room reservation and tracking, monitor biking paths, social distance measurements with UWB or BLE, etc.
-
 
 ## Tools
 
@@ -121,33 +99,34 @@ Apps:
 * 	[Google Colab](https://colab.research.google.com) to run iPython notebooks and collaborate on the code. Will be used later in this course.
 
 ### Assistance
-* 	Olga is available in the virtual classroom 3-5pm every scheduled appointment.
-* 	Peter (peter.prodinger at student.tugraz.at) will help you to fix coding issues. Approach him on Slack or email him if you need help.
+* 	Olga is available in WebEx 3-5pm every scheduled appointment.
+* 	Peter (peter.prodinger at student.tugraz.at) will help you to fix coding issues in the lab (Technische Informatik Nord, IE01074). Approach him on Slack or email him if you need help.
 * 	It's easier to help if you use GitHub / GitLab / Google Colab and we can access your code!
 
 ### Hints
-* 	Learning mobile development is not difficult, but do not underestimate the required time and effort!
+* 	Android programming is not difficult, but do not underestimate the required time and effort!
 * 	Do not wait until the last minute to start working on the project!
 
-__Previous years' statistics__: Activity recognition app takes a team of 2 people (with some Android programming experience) 4 days to complete (full time). Transfer learning will probably take the same team 7 days to complete (full time).
+__Previous years' statistics__: Activity recognition app takes a team of 2 people (with some Android programming experience) 4 days to complete (full time). Transfer learning takes the same team 7 days to complete (full time).
 
 
 ## Progress / Demos / Reports 
 * 	Intermediate progress meetings are there to make sure you are well on track. See instructions:
-    * 	<a href="Progress_Reviews.md">2021-05-05 Progress Review</a> 
-    * 	<a href="Progress_Reviews.md">2021-06-02 Progress Review</a>
+    * 	<a href="Progress_Reviews.md">Demo (Option 1) and Progress Review (Option 2)</a> 
 * 	At the end of the course you will be asked to 
     * 	Submit your report as PDF
-    *  	Share with Olga the link to your GitHub / GitLab repository
-    * 	Present and demonstrate your app in action
-* 	See <a href="Final_Demo_and_Report.md">2021-06-23 Final Demo and Report</a>
+    *  	Share your code with Olga (grant access to your GitHub / GitLab repository)
+	*   Submit a video showing the app in action
+    * 	Present and demonstrate your app live (during the final in-person meeting)
+	* 	See instructions: <a href="Final_Demo_and_Report.md">Final Demo and Report</a>
 
 
 ## Grading
 *   Your final grade is based on the following grading scheme:
-    - 20 points -- Novelty, your ideas, attention to detail, code clarity
-    - 60 points -- Working demo and quality of the obtained performance results
-    - 20 points -- Quality of the report (structure, readability)
+	- 10 points -- Performance in the intermediate demo / progress review
+    - 10 points -- Novelty, your ideas, attention to detail, code clarity
+    - 60 points -- Working demo and performance results
+    - 20 points -- Quality of the report (structure, readability, completeness) and final video
 
 * Grading scheme:
     - &#8805; 90 --> 1 (excellent)
@@ -158,5 +137,3 @@ __Previous years' statistics__: Activity recognition app takes a team of 2 peopl
 
 There will be presents for the best projects!
 ![](img/intro/android_collectibles.jpg "Android Collectibles")
-
-In case of on-site classroom suspension the presents will be sent to you by post.
