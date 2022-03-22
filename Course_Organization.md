@@ -1,4 +1,4 @@
-# 2022-03-23 Course Organization
+# Course Organization
 
 ## Basic Information
  
