@@ -26,7 +26,7 @@ __Participation in the final class is mandatory.__
     - < 50 --> 5 (insufficient)
 
 There will be presents for the best projects!
-![](img/intro/android_collectibles.jpg "Android Collectibles")
+<img src="img/intro/android_collectibles.jpg" width="800">
 
 
 ### Final Report Instructions

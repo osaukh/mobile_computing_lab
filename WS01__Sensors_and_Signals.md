@@ -72,9 +72,7 @@ Source: Paper [Activity Recognition from User-Annotated Acceleration Data](http:
 
 <img src="img/sensors/project_option_1_classification.png" width="800">
 
-* __k-Nearest Neighbors algorithm (kNN)__
-
-kNN is a top-10 machine learning tool! The output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
+* __k-Nearest Neighbors algorithm (kNN)__ is a top-10 machine learning tool! The output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
 
 <img src="https://camo.githubusercontent.com/1ae598a658f0cf308d0b5afe2149a2d716cde3f82036fb9e04948cfc6db26904/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f652f65372f4b6e6e436c617373696669636174696f6e2e7376672f32323070782d4b6e6e436c617373696669636174696f6e2e7376672e706e67" width="200">
 
@@ -83,9 +81,96 @@ The test sample (green circle) should be classified either to the first class of
 Source: [Wikipedia](http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm)
 
 * __Decisions to be made:__
-	* How large is K?
-		* Odd number
-		* $\sqrt{N}$ 
+	
+_How large is K?_
+* Odd number
+* ![](https://latex.codecogs.com/svg.latex?\sqrt{N}) 
+
+_What is the best distance measure?_
+		
+__Euclidean:__ is the "ordinary" (i.e. straight-line) distance between two points in Euclidean space.
+
+![](https://latex.codecogs.com/svg.latex?&space;D(w_i,v_i)=\sqrt{\sum(w_i-v_i)^2})
+
+__Manhattan:__ is a city block distance, taxicab metric is defined as the sum of the lengths of the projections of the line segment between the points onto the coordinate axes.
+
+![](https://latex.codecogs.com/svg.latex?&space;D(w_i,v_i)=\sum|w_i-v_i|)
+
+<img src="https://github.com/osaukh/mobile_computing_lab/raw/6ed57c866a4ec772d4a2a322da4d057c6254f437//img/sensors/project_option_1_manhatten.png" width="200">
+
+__Chebyshev (Chessboard):__ is a distance measure where all 8 adjacent cells from the given point can be reached by one unit i.e diagonal move is valid. It is also known as chessboard distance, since in the game of chess the minimum number of moves needed by a king to go from one square on a chessboard to another equals the Chebyshev distance between the centers of the squares.
+
+![](https://latex.codecogs.com/svg.latex?&space;D(w_i,v_i)=\max|w_i-v_i|)
+
+<img src="https://github.com/osaukh/mobile_computing_lab/raw/6ed57c866a4ec772d4a2a322da4d057c6254f437//img/sensors/project_option_1_chebyshev.png" width="200">
+
+Source: [Euclidean vs Chebyshev vs Manhattan Distance?](http://www.isumitjha.com/2017/12/chebyshev-vs-euclidean-vs-manhattan.html)
+
+# Your Task: Activity Monitoring (Option 1)
+
+<img src="img/project_options2.png" width="800">
+
+### Cookbook
+
+#### 1. Read accelerometer data and display data on the screen
+
+* Implement the interface `SensorEventListener`:
+
+```java
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
+```
+
+* Declare variables for `SensorManager` and `accelerometer`:
+
+```java
+private SensorManager sm;
+private Sensor accelerometer;
+```
+
+* Instantiate them in `OnCreate` method:
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+        ...
+    sm = (SensorManager)getSystemService(SENSOR_SERVICE);
+    accelerometer = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        ...
+
+    sm.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+}
+```
+
+* Capture sensor values in `onSensorChanged` method:
+
+```java
+@Override
+public void onSensorChanged(SensorEvent event) {
+    double x, y, z;
+    x = event.values[0];
+    y = event.values[1];
+    z = event.values[2];
+
+    //Store data in memory, file, or in other data structure
+    addDataToProcess (x, y, z); 
+}
+
+```
+
+* Call your function to recognize activity at suitable times:
+
+```java
+public ActivityType recognizeActivity () {
+    // ActivityType is an enum {NONE, SIT, WALK, RUN, ...};
+
+    // Fill in with your algorithm
+}
+```
+
+#### Step 2: Write accelerometer data to a file
+
+
+
 
 ## References
 
