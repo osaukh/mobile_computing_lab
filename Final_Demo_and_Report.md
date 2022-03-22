@@ -51,6 +51,6 @@ There will be presents for the best projects!
 
 * Please evaluate the course in TUG online. You can also share any suggestions how to improve the course per email. Thank you! We take your feedback seriously.
 
-* In winter semester Olga teachs two courses <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=257936">Fault-Tolerant Distributed Algorithms</a> (see a preliminary list of topics from the last year) and <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=259749">Embedded Machine Learning</a>. If interested, Olga is more than happy to see you in the class!
+* In winter semester Olga teaches two courses <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=257936">Fault-Tolerant Distributed Algorithms</a> (see a preliminary list of topics from the last year) and <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=259749">Embedded Machine Learning</a>. If interested, Olga is more than happy to see you in the class!
 
 __Thank you for participating in MCL!__

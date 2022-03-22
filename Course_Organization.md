@@ -78,7 +78,7 @@ Expected path:
 
 The project must involve sensors and non-trivial data processing on a mobile phone. Before you suggest a free choice project, please read related literature on the topic including scientific publications.
 
-<img src="img/intro/project_option_3.png" width="800">
+<img src="img/intro/project_option_free.png" width="800">
     
 Expected path:
 * 	Week 1: Define your project (read furiously) and agree with Olga
