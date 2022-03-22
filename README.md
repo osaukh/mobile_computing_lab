@@ -13,7 +13,7 @@ The course provides an introduction to the current research trends in the area o
 *    2022-04-06 - Lab: Individual coaching (Peter)
 *    2022-04-27 - WebEx and Lab: Individual coaching (Olga and Peter)
 *    __2022-05-04 - WebEx__ 
-		* Demos [(Options 1)](https://github.com/osaukh/mobile_computing_lab/blob/master/Progress_Reviews.md)
+		* Demos [Instructions (Options 1)](https://github.com/osaukh/mobile_computing_lab/blob/master/Progress_Reviews.md)
 		* [Workshop 4: On-device transfer learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_TransferLearning.md)
 *    2022-05-18 - Lab: Individual coaching (Peter)
 *    2022-05-25 - WebEx and Lab: Individual coaching (Olga and Peter)
