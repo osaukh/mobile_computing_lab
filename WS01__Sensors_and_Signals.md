@@ -37,7 +37,7 @@ __Follow instructions:__
 
 ### 4. Activity Monitoring
 
-<img src="img/sensors/project_option_1_person_walking.png">
+<img src="img/sensors/project_option_1_person_walking.png" width="800">
 
 #### Step 1: Raw signal
 
@@ -52,7 +52,7 @@ __Follow instructions:__
 * Most smartphones have 3-axis accelerometers. Accelerometers can provide a lot of information.
 	* Activity monitoring 
 
-<img src="img/sensors/project_option_1_acceleration_data.png" width="600">
+<img src="img/sensors/project_option_1_acceleration_data.png" width="800">
 
 Source: Paper [Activity Recognition from User-Annotated Acceleration Data](http://web.media.mit.edu/~intille/papers-files/BaoIntille04.pdf), Pervasive 2004
 
@@ -64,13 +64,13 @@ Source: Paper [Activity Recognition from User-Annotated Acceleration Data](http:
 	* Choose a window size (20 samples, 500 ms)
 	* Select features (mean, max min, variance, Fourier transforms, autocorrelation, ...)
 
-<img src="img/sensors/project_option_1_acceleration_data2.png">
+<img src="img/sensors/project_option_1_acceleration_data2.png" width="800">
 
 #### Step 3: Classification method (science)
 
 * __Exploration:__ Get some features and plot them. There going to be an overlap depending on the window's size.
 
-<img src="img/sensors/project_option_1_classification.png" width="600">
+<img src="img/sensors/project_option_1_classification.png" width="800">
 
 * __k-Nearest Neighbors algorithm (kNN)__
 
@@ -85,7 +85,7 @@ Source: [Wikipedia](http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm)
 * __Decisions to be made:__
 	* How large is K?
 		* Odd number
-		* $\sqrt{N}$
+		* $\sqrt{N}$ 
 
 ## References
 
