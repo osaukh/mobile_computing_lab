@@ -65,7 +65,7 @@ The project is for beginners and consists of two parts: First, you will read sen
 
 _Your list of activities must be: (1) walking, (2) jogging, (3) jumping, (4) squatting, (5) sitting, (6) standing._
     
-<img src="img/sensors/project_option_1_acceleration_data.png" width="600">
+<img src="img/sensors/project_option_1_acceleration_data.png" width="800">
 
 Expected path:
 * 	Week 1-3: Activity monitoring (e.g., based on kNN)
@@ -136,4 +136,4 @@ __Previous years' statistics__: Activity recognition app takes a team of 2 peopl
     - < 50 --> 5 (insufficient)
 
 There will be presents for the best projects!
-![](img/intro/android_collectibles.jpg "Android Collectibles")
+<img src="img/intro/android_collectibles.jpg" width="800">
