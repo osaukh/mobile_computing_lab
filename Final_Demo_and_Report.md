@@ -13,9 +13,10 @@ __Participation in the final class is mandatory.__
     -    The committee will ask you questions about your apps. Be prepared to give quantitative estimations of your app performance.
 
 *   Your final grade is based on the following grading scheme:
-    - 20 points -- Novelty, your ideas, attention to detail, code clarity
-    - 60 points -- Working demo and quality of the obtained performance results
-    - 20 points -- Quality of the report (structure, readability)
+	- 10 points -- Performance in the intermediate demo / progress review
+    - 10 points -- Novelty, your ideas, attention to detail, code clarity
+    - 60 points -- Working demo and performance results
+    - 20 points -- Quality of the report (structure, readability, completeness) and final video
 
 * Grading scheme:
     - &#8805; 90 --> 1 (excellent)
@@ -26,8 +27,6 @@ __Participation in the final class is mandatory.__
 
 There will be presents for the best projects!
 ![](img/intro/android_collectibles.jpg "Android Collectibles")
-
-In case of on-site classroom suspension the presents will be sent to you by post.
 
 
 ### Final Report Instructions
@@ -42,15 +41,16 @@ In case of on-site classroom suspension the presents will be sent to you by post
     -   Screenshots showing your app in action.
     -   A link to your GitHub / GitLab repository (make sure Olga can access it).
     -   Description of your app limitations (What can be improved? What app extensions are feasible?)
+	- 	A download link to a video showing your app in action.
 
 *   Once Olga has received your report, she will send you your final grade and a short justification.
 
 ### Concluding Remarks
 
-* If you agree, we would like to make photos / videos of your apps in action and share these through the social media channels of our department to promote your work and the course. We will formulate 2 sentences to describe what your app does and add tags to your social media streams / repositories if you wish so. Olga will also add a short description of your app to the <a href="http://olgasaukh.com/mcl.html">MCL page</a>. If you don’t want your work / your pictures be shared this way, please let Olga know. We will only do this if all team members give us their consent!
+* If you agree, we will share your final videos with a short message through the social media channels of our department to promote your work and the course. Olga will also add a short description of your app to the <a href="http://olgasaukh.com/mcl.html">MCL page</a>. If you don’t want your work / your pictures to be shared this way, let Olga know. We will only do this if all team members give us their consent!
 
 * Please evaluate the course in TUG online. You can also share any suggestions how to improve the course per email. Thank you! We take your feedback seriously.
 
-* In winter semester Olga teachs the course <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=227914&pSpracheNr=2">Fault-Tolerant Distributed Algorithms</a> (see a preliminary list of topics from the last year). If interested, Olga is more than happy to see you in the class!
+* In winter semester Olga teachs two courses <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=257936">Fault-Tolerant Distributed Algorithms</a> (see a preliminary list of topics from the last year) and <a href="https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=259749">Embedded Machine Learning</a>. If interested, Olga is more than happy to see you in the class!
 
 __Thank you for participating in MCL!__
