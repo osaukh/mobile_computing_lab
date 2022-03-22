@@ -56,9 +56,6 @@ The course is for new and experienced developers who already have Java programmi
 *   Make sure each group owns at least one smartphone running Android (or iOS and a MacBook). __If you have no Android phone contact Olga__.
 
 
-In SS'21 due to COVID-19 the students are strongly encouraged to work on their projects independently. If you do decide to team up with someone, please consider remote collaboration tools and split the workload reasonably.
-
-
 ## Project Options
 
 The course is based on a programming project. Two options are available:
