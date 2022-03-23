@@ -1,5 +1,9 @@
 # Cookbook: Activity Monitoring with kNN
 
+The project is for beginners. You will read sensor data provided by your phone (e.g., acceleration values) and use kNN (k-Nearest Neighbors algorithm) to detect the type of activity you are currently performing.
+
+_Your list of activities must be: (1) walking, (2) jogging, (3) jumping, (4) squatting, (5) sitting, (6) standing._
+
 <img src="img/sensors/project_option_1_person_walking.png" width="800">
 
 ## Method and General Considerations
