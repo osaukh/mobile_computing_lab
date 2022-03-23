@@ -33,6 +33,7 @@ Goal: Learn about the Android sensor framework, which is used to find the availa
 __Follow instructions:__
 * Read: [Sensors overview](https://developer.android.com/guide/topics/sensors/sensors_overview)
 * Follow the steps: [3.1: Getting sensor data (do both Task 1 and Task 2)](https://developer.android.com/codelabs/advanced-android-training-sensor-data#0)
+* __Exercise:__ Number the sensors in the SensorSurvey list on the screen 
 
 
 ### 4. Activity Monitoring
