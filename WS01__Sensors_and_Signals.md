@@ -39,6 +39,6 @@ __Follow instructions:__
 
 ## Your Task
 
-<img src="img/project_options2.png" width="800">
+<img src="img/project_options1.png" width="800">
 
 * Option 1 --> [Cookbook: Activity Monitoring with kNN](https://github.com/osaukh/mobile_computing_lab/blob/master/Cookbook__ActivityMonitoring_with_kNN.md)
