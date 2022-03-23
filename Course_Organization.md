@@ -29,10 +29,10 @@ This course will provide a solid background for the above points. During the wor
 ## Workshops
 
 Workshops will help you to get started with the topics:
-*   [Workshop 1 -- Sensors and signals: Android, sensors, activity recognition](2021-03-17__WS1_0__Sensors_and_Signals.ipynb)
-*   [Workshop 2 -- Speech processing in mobile applications](2021-03-24__WS2_0__Speech_Processing.ipynb)
-*   [Workshop 3 -- TensorFlow and TF Lite: Machine learning on mobile devices](2021-03-24__WS3_0__TensorFlow.ipynb)
-*   [Workshop 4 -- Activity monitoring and transfer learning](WS04__OnDevice_TransferLearning.md)
+*   [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
+*   [Workshop 2: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__Speech_Processing.md)
+*   [Workshop 3: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__TensorFlow_and_TFLite.md)
+*   [Workshop 4: On-device transfer learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_TransferLearning.md)
 
 
 Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx. Code troubleshooting: use __Slack for asking questions__. Attend in-person Q&A sessions and ask Peter for help or send him an email (peter.prodinger at student.tugraz.at). Last resort: send an email to Olga (saukh at tugraz.at) and schedule a separate appointment.
