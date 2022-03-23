@@ -35,6 +35,7 @@ __Follow instructions:__
 * Follow the steps: [3.1: Getting sensor data (do both Task 1 and Task 2)](https://developer.android.com/codelabs/advanced-android-training-sensor-data#0)
 * __Exercise (Task 1):__ Number the sensors in the SensorSurvey list on the screen 
 * __Exercise (Task 2):__ Add and display accelerometer values
+* __Exercise (Task 2):__ Modify the SensorListeners app such that the background color of the app changes in response to the light level (see "6. Coding Challenge" for a tip).
 
 
 ## Your Task
