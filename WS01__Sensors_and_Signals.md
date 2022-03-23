@@ -36,8 +36,8 @@ __Follow instructions:__
 * __Exercise:__ Number the sensors in the SensorSurvey list on the screen 
 
 
-### 4. Activity Monitoring
+## Your Task
 
-<img src="img/sensors/project_option_1_person_walking.png" width="800">
+<img src="img/project_options2.png" width="800">
 
 * Option 1 --> [Cookbook: Activity Monitoring with kNN](https://github.com/osaukh/mobile_computing_lab/blob/master/Cookbook__ActivityMonitoring_with_kNN.md)

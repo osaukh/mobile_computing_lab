@@ -1,5 +1,9 @@
 # Cookbook: Activity Monitoring with kNN
 
+<img src="img/sensors/project_option_1_person_walking.png" width="800">
+
+## Method and General Considerations
+
 #### Step 1: Raw signal
 
 * Key sensors for our app (... and many more other applications):
@@ -67,11 +71,8 @@ __Chebyshev (Chessboard):__ is a distance measure where all 8 adjacent cells fro
 
 Source: [Euclidean vs Chebyshev vs Manhattan Distance?](http://www.isumitjha.com/2017/12/chebyshev-vs-euclidean-vs-manhattan.html)
 
-# Your Task: Activity Monitoring (Option 1)
 
-<img src="img/project_options2.png" width="800">
-
-### Cookbook
+## Code Snippets
 
 #### 1. Read accelerometer data and display data on the screen
 
