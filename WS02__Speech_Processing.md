@@ -26,13 +26,9 @@ In recent years, great results have been achieved in generating and processing i
 __Source separation example.__ 
 In a scenario where two people are speaking over each other, in your mind, you can imagine either person speaking in isolation without much effort. But how do we describe a formula for separating these two voices? Is there a unified way to describe how human voices sound? If yes, how are parameters of this description affected by sex, age, energy, personality? How does physical proximity to the listener and room acoustics impact this understanding? What about non-human noise that can occur during the recording? On which parameters can we discriminate one voice over another?
 
-As you can see, devising a formula for the full extent of this problem would require attention to a lot of parameters. Here, AI can provide a more pragmatic approach. See a research paper below, which uses a convolutional recurrent neural network architecture.
+As you can see, devising a formula for the full extent of this problem would require attention to a lot of parameters. Here, AI can provide a more pragmatic approach. One of the interesting early publications on audio processing with deep learning was the publication of [Google Deepmind’s “WaveNet”](https://www.deepmind.com/blog/wavenet-a-generative-model-for-raw-audio) - a deep learning model for generating audio recordings which was released in 2016. Using an adapted network architecture, a dilated convolutional neural network, Deepmind researchers succeeded in generating very convincing text-to-speech and some interesting music-like recordings trained from classical piano recordings.
 
-[Low Latency Sound Source Separation Using Convolutional Recurrent Neural Networks](http://www.cs.tut.fi/~tuomasv/papers/PID4978439.pdf), 2017.
-
-One of the interesting early publications on audio processing with deep learning was the publication of [Google Deepmind’s “WaveNet”](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) - a deep learning model for generating audio recordings which was released in 2016. Using an adapted network architecture, a dilated convolutional neural network, Deepmind researchers succeeded in generating very convincing text-to-speech and some interesting music-like recordings trained from classical piano recordings.
-
-<img src="https://miro.medium.com/max/2572/1*0TbaaX8l86ghbGEhuSjPzw.jpeg" width="700"/>
+<img src="https://assets-global.website-files.com/621e749a546b7592125f38ed/62227b1d1dd26da452c9e160_unnamed-2.gif" width="700"/>
 
 WaveNet was among the first successful attempts to generate audio on a raw sample level. The one big problem here is that CD quality audio is usually stored with 44.1 kHz samples per second and thus, generating *seconds* of sound with WaveNet takes *hours*. This excludes the method from having use in real-time applications. It’s just a lot of data to make sense of.
 
