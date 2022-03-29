@@ -81,3 +81,142 @@ Run the app on your smartphone and undestand the code:
 * [Source code](code/SpeechProcessing) (kudos for some parts of the code to Jakub Lukac).
 * When running the app on your smartphone for the first time, grant it permissions to access the microphone: `Settings -> Apps -> SpeechProcessing -> Permissions`.
 
+
+#### Notes on the Code
+
+Some important settings we use in __AudioRecorder__ class: 
+* Sampling rate of the audio signal is 44.1 kHz; 
+* Only one channel for processing (mono, no stereo); 
+* Encoding is 32 bit IEEE single precision float values (`ENCODING_PCM_FLOAT`). Note that this encoding requires at least API level 22 (see [Platform codenames, versions, API levels](https://source.android.com/setup/start/build-numbers).
+
+Android audio format options are detailed in the manual [AudioFormat](https://developer.android.com/reference/android/media/AudioFormat).
+
+```Java
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
+
+public class AudioRecorder {
+    ...
+    private static final int RECORDING_RATE = 44100;
+    private static final int CHANNEL = AudioFormat.CHANNEL_IN_MONO;
+    private static final int FORMAT = AudioFormat.ENCODING_PCM_FLOAT;
+    ...
+}
+
+```
+
+We create an instance of the `AudioRecord` class to start recording audio data:
+
+```Java
+public class AudioRecorder {
+    ...
+    private AudioRecord audioRecord;
+    
+    public void startRecording() {
+        audioRecord = new AudioRecord(
+                MediaRecorder.AudioSource.MIC,
+                RECORDING_RATE,
+                CHANNEL,
+                FORMAT,
+                MIN_BUFFER_SIZE_IN_BYTES);
+        ...
+            
+        audioRecord.startRecording();
+        ...
+   }
+   ...
+```
+
+In addition, we need to execute tasks within two threds: (1) periodically read audio data from the buffer, and (2) process the data by the registered callbacks implemented by the listeners.
+
+```Java
+public class AudioRecorder {
+    ...
+    private final List<AudioRecorderDataReceiveListener> dataReceiveListeners;    
+    private final Handler recordingHandler;
+    private final Handler callbacksHandler;
+    ...
+        
+    public AudioRecorder() {
+        ...
+        HandlerThread recordingThread = new HandlerThread("RecordingThread");
+        HandlerThread callbacksThread = new HandlerThread("CallbacksExecThread");
+        recordingThread.start();
+        callbacksThread.start();
+
+        recordingHandler = new Handler(recordingThread.getLooper());
+        callbacksHandler = new Handler(callbacksThread.getLooper());
+        dataReceiveListeners = new ArrayList<>();
+        ...
+    }
+    
+    public void startRecording() {
+        ...
+        handler.post(createRecurringReadAudioTask());
+    }
+    
+    private Runnable createRecurringReadAudioTask() {
+        return new Runnable() {
+            @Override
+            public void run() {
+                // schedule next read
+                recordingHandler.post(createRecurringReadAudioTask());
+                ...
+                int readSamples = audioRecord.read(
+                    audioBuffer, 0, audioBuffer.length, AudioRecord.READ_BLOCKING);
+                ...
+                if (readSamples > 0) {
+                    // asynchronous samples processing listeners, 
+                    // each executed in a separate "CallbacksExecThread" thread
+                    asyncProcessReceivedData(audioBuffer, readSamples);
+                }
+            }
+        };
+    }
+    
+    private void asyncProcessReceivedData(final float[] buffer, final int samples) {
+        dataReceiveListeners.forEach(listener -> {
+            callbacksHandler.post(() -> {
+                listener.onDataReceive(buffer, samples);
+            });
+        });
+    }
+    ...
+}
+```
+
+Finally, the `SoundVisualizer` class is a listener, which visualizes the data on the screen.
+
+
+```Java
+public class SoundVisualizer extends View implements AudioRecorderDataReceiveListener {
+    ...
+    public void onDataReceive(final float[] data, final int length) {
+        // process data
+    }
+    ...
+}
+```
+
+The app can be used as a starting point to implement a useful audio processing function.
+
+### 4. Compute spectogram of an audio wave
+
+__Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
+
+
+### References, Credits and Further Readings
+
+* Medium: [Effects of spectrogram pre-processing for audio classification](https://medium.com/using-cnn-to-classify-audio/effects-of-spectrogram-pre-processing-for-audio-classification-a551f3da5a46)
+* Medium: [Understanding Audio data, Fourier Transform, FFT and Spectrogram features for a Speech Recognition System](https://towardsdatascience.com/understanding-audio-data-fourier-transform-fft-spectrogram-and-speech-recognition-a4072d228520)
+* __A series of posts by Daniel Rothmann__:
+    * Medium: [The promise of AI in audio processing](https://towardsdatascience.com/the-promise-of-ai-in-audio-processing-a7e4996eb2ca)
+    * Medium: [Human-Like Machine Hearing With AI (1/3)](https://towardsdatascience.com/human-like-machine-hearing-with-ai-1-3-a5713af6e2f8)
+    * Medium: [Human-Like Machine Hearing With AI (2/3)](https://towardsdatascience.com/human-like-machine-hearing-with-ai-2-3-f9fab903b20a)
+    * Medium: [Human-Like Machine Hearing With AI (3/3)](https://towardsdatascience.com/human-like-machine-hearing-with-ai-3-3-fd6238426416)
+    * Medium: [What’s wrong with CNNs and spectrograms for audio processing?](https://towardsdatascience.com/whats-wrong-with-spectrograms-and-cnns-for-audio-processing-311377d7ccd)
+* Medium: [Using LibROSA to extract audio features](https://medium.com/tencent-thailand/music-information-retrieval-part-1-using-librosa-to-extract-audio-features-6e8569537185)
+* Medium: [Create an Audio Recorder for Android](https://medium.com/@ssaurel/create-an-audio-recorder-for-android-94dc7874f3d)
+* Medium: [Getting to Know the Mel Spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0)
+* Medium: [The dummy’s guide to MFCC](https://medium.com/prathena/the-dummys-guide-to-mfcc-aceab2450fd)
