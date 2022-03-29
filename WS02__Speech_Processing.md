@@ -201,10 +201,302 @@ public class SoundVisualizer extends View implements AudioRecorderDataReceiveLis
 
 The app can be used as a starting point to implement a useful audio processing function.
 
-### 4. Compute spectogram of an audio wave
-
 __Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
 
+
+### 4. Audio Command Recognition
+
+This tutorial is based on the [Simple audio recognition: Recognizing keywords](https://www.tensorflow.org/tutorials/audio/simple_audio) tutorial by TensorFlow but makes it also work on a mobile phone. It shows how to build and run a simple speech recognition TF model. Once you’ve completed this tutorial, you’ll have an application that tries to classify a one second audio clip as either silence, an unknown word, “yes”, “no”, “up”, “down”, “left”, “right”, “on”, “off”, “stop”, or “go”.
+
+<img src="data:image/png;base64,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" width="250">
+
+
+* [Pre-trained Model](https://github.com/EN10/SimpleSpeech/tree/master/test)
+* [Model Code and Tutorial](https://www.tensorflow.org/tutorials/audio/simple_audio)
+* [App Source Code](https://github.com/Thumar/audio-recognition)
+
+
+__Follow the TensorFlow tutorial:__
+
+Use Google Colab: [Simple audio recognition: Recognizing keywords](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb)
+
+<table>
+  <td>
+    <a target="_blank" href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb">
+    <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
+    Run in Google Colab</a>
+  </td>
+  <td>
+    <a target="_blank" href="https://github.com/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb">
+    <img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />
+    View source on GitHub</a>
+  </td>
+</table>
+
+
+__Building / Training / Testing a Model:__
+
+You can train your model on your laptop, or on a server, and then use that pre-trained model on our mobile device. Alternatively, you can use an already [pre-trained model](http://download.tensorflow.org/models/speech_commands_v0.01.zip).
+
+
+__Android App:__
+
+Android [app source code](https://github.com/Thumar/audio-recognition). You need to copy model files to the assets folder and specify correct paths in `MainActivity.java`.
+
+To request microphone, you should be requesting `RECORD_AUDIO` permission in your manifest file as below:
+
+```XML
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+```
+
+__Microphone Permission:__
+
+Since Android 6.0 Marshmallow, the application will not be granted any permission at installation time. Instead, the application has to ask the user for a permission one-by-one at runtime.
+
+```Java
+private void requestMicrophonePermission() {
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{android.Manifest.permission.RECORD_AUDIO}, REQUEST_RECORD_AUDIO);
+    }
+@Override
+public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+      if (requestCode == REQUEST_RECORD_AUDIO&& grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            startRecording();
+            startRecognition();
+      }
+ }
+```
+
+__Recording Audio:__
+
+The `AudioRecord` class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. This is achieved by “pulling” (reading) the data from the `AudioRecord` object. The application is responsible for polling the AudioRecord object in time using `read(short[], int, int)`.
+
+```Java
+private void record() {
+        android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO);
+ 
+        // Estimate the buffer size we'll need for this device.
+        int bufferSize =
+                AudioRecord.getMinBufferSize(
+                        SAMPLE_RATE, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+        if (bufferSize == AudioRecord.ERROR || bufferSize == AudioRecord.ERROR_BAD_VALUE) {
+            bufferSize = SAMPLE_RATE * 2;
+        }
+        short[] audioBuffer = new short[bufferSize / 2];
+ 
+        AudioRecord record =
+                new AudioRecord(
+                        MediaRecorder.AudioSource.DEFAULT,
+                        SAMPLE_RATE,
+                        AudioFormat.CHANNEL_IN_MONO,
+                        AudioFormat.ENCODING_PCM_16BIT,
+                        bufferSize);
+ 
+        if (record.getState() != AudioRecord.STATE_INITIALIZED) {
+            Log.e(LOG_TAG, "Audio Record can't initialize!");
+            return;
+        }
+ 
+        record.startRecording();
+ 
+        Log.v(LOG_TAG, "Start recording");
+ 
+        // Loop, gathering audio data and copying it to a round-robin buffer.
+        while (shouldContinue) {
+            int numberRead = record.read(audioBuffer, 0, audioBuffer.length);
+            int maxLength = recordingBuffer.length;
+            int newRecordingOffset = recordingOffset + numberRead;
+            int secondCopyLength = Math.max(0, newRecordingOffset - maxLength);
+            int firstCopyLength = numberRead - secondCopyLength;
+            // We store off all the data for the recognition thread to access. The ML
+            // thread will copy out of this buffer into its own, while holding the
+            // lock, so this should be thread safe.
+            recordingBufferLock.lock();
+            try {
+                System.arraycopy(audioBuffer, 0, recordingBuffer, recordingOffset, firstCopyLength);
+                System.arraycopy(audioBuffer, firstCopyLength, recordingBuffer, 0, secondCopyLength);
+                recordingOffset = newRecordingOffset % maxLength;
+            } finally {
+                recordingBufferLock.unlock();
+            }
+        }
+ 
+        record.stop();
+        record.release();
+    }
+```
+
+__Run TensorFlow Model:__
+
+A `TensorFlowInferenceInterface` class that provides a smaller API surface suitable for inference and summarizing the performance of model execution.
+
+```Java
+private void recognize() {
+    Log.v(LOG_TAG, "Start recognition");
+ 
+    short[] inputBuffer = new short[RECORDING_LENGTH];
+    float[] floatInputBuffer = new float[RECORDING_LENGTH];
+    float[] outputScores = new float[labels.size()];
+    String[] outputScoresNames = new String[]{OUTPUT_SCORES_NAME};
+    int[] sampleRateList = new int[]{SAMPLE_RATE};
+ 
+    // Loop, grabbing recorded data and running the recognition model on it.
+    while (shouldContinueRecognition) {
+            // The recording thread places data in this round-robin buffer, so lock to
+            // make sure there's no writing happening and then copy it to our own
+            // local version.
+       recordingBufferLock.lock();
+       try {
+           int maxLength = recordingBuffer.length;
+           int firstCopyLength = maxLength - recordingOffset;
+           int secondCopyLength = recordingOffset;
+           System.arraycopy(recordingBuffer, recordingOffset, inputBuffer, 0, firstCopyLength);
+           System.arraycopy(recordingBuffer, 0, inputBuffer, firstCopyLength, secondCopyLength);
+        } finally {
+           recordingBufferLock.unlock();
+         }
+ 
+            // We need to feed in float values between -1.0f and 1.0f, so divide the
+            // signed 16-bit inputs.
+         for (int i = 0; i < RECORDING_LENGTH; ++i) {
+             floatInputBuffer[i] = inputBuffer[i] / 32767.0f;
+         }
+ 
+            // Run the model.
+       inferenceInterface.feed(SAMPLE_RATE_NAME, sampleRateList);
+       inferenceInterface.feed(INPUT_DATA_NAME, floatInputBuffer, RECORDING_LENGTH, 1);
+       inferenceInterface.run(outputScoresNames);
+       inferenceInterface.fetch(OUTPUT_SCORES_NAME, outputScores);
+ 
+       // Use the smoother to figure out if we've had a real recognition event.
+       long currentTime = System.currentTimeMillis();
+       final RecognizeCommands.RecognitionResult result = recognizeCommands.processLatestResults(outputScores, currentTime);
+ 
+       runOnUiThread(
+             new Runnable() {
+                 @Override
+                 public void run() {
+                   // If we do have a new command, highlight the right list entry.
+                      if (!result.foundCommand.startsWith("_") && result.isNewCommand) {
+                            int labelIndex = -1;
+                            for (int i = 0; i < labels.size(); ++i) {
+                             if (labels.get(i).equals(result.foundCommand)) {
+                                    labelIndex = i;
+                              }
+                         }
+                         label.setText(result.foundCommand);
+                    }
+                }
+              });
+        try {
+            // We don't need to run too frequently, so snooze for a bit.
+            Thread.sleep(MINIMUM_TIME_BETWEEN_SAMPLES_MS);
+        } catch (InterruptedException e) {
+         // Ignore
+        }
+    }
+ 
+    Log.v(LOG_TAG, "End recognition");
+}
+```
+
+__Recognize Commands:__
+
+`RecognizeCommands` class is fed the output of running the `TensorFlow` model over time, it averages the signals and returns information about a label when it has enough evidence to think that a recognized word has been found. The implementation is fairly small, just keeping track of the last few predictions and averaging them.
+
+```Java
+public RecognitionResult processLatestResults(float[] currentResults, long currentTimeMS) {
+        if (currentResults.length != labelsCount) {
+            throw new RuntimeException(
+                    "The results for recognition should contain "
+                            + labelsCount
+                            + " elements, but there are "
+                            + currentResults.length);
+        }
+ 
+        if ((!previousResults.isEmpty()) && (currentTimeMS < previousResults.getFirst().first)) {
+            throw new RuntimeException(
+                    "You must feed results in increasing time order, but received a timestamp of "
+                            + currentTimeMS
+                            + " that was earlier than the previous one of "
+                            + previousResults.getFirst().first);
+        }
+ 
+        final int howManyResults = previousResults.size();
+        // Ignore any results that are coming in too frequently.
+        if (howManyResults > 1) {
+            final long timeSinceMostRecent = currentTimeMS - previousResults.getLast().first;
+            if (timeSinceMostRecent < minimumTimeBetweenSamplesMs) {
+                return new RecognitionResult(previousTopLabel, previousTopLabelScore, false);
+            }
+        }
+ 
+        // Add the latest results to the head of the queue.
+        previousResults.addLast(new Pair<Long, float[]>(currentTimeMS, currentResults));
+        Log.d(TAG, currentResults + " " + currentTimeMS);
+ 
+        // Prune any earlier results that are too old for the averaging window.
+        final long timeLimit = currentTimeMS - averageWindowDurationMs;
+        while (previousResults.getFirst().first < timeLimit) {
+            previousResults.removeFirst();
+        }
+        // If there are too few results, assume the result will be unreliable and
+        // bail.
+        final long earliestTime = previousResults.getFirst().first;
+        final long samplesDuration = currentTimeMS - earliestTime;
+        if ((howManyResults < minimumCount)
+                || (samplesDuration < (averageWindowDurationMs / MINIMUM_TIME_FRACTION))) {
+            Log.v("RecognizeResult", "Too few results");
+            return new RecognitionResult(previousTopLabel, 0.0f, false);
+        }
+ 
+        // Calculate the average score across all the results in the window.
+        float[] averageScores = new float[labelsCount];
+        for (Pair<Long, float[]> previousResult : previousResults) {
+            final float[] scoresTensor = previousResult.second;
+            int i = 0;
+            while (i < scoresTensor.length) {
+                averageScores[i] += scoresTensor[i] / howManyResults;
+                ++i;
+            }
+        }
+ 
+        // Sort the averaged results in descending score order.
+        ScoreForSorting[] sortedAverageScores = new ScoreForSorting[labelsCount];
+        for (int i = 0; i < labelsCount; ++i) {
+            sortedAverageScores[i] = new ScoreForSorting(averageScores[i], i);
+        }
+        Arrays.sort(sortedAverageScores);
+ 
+        // See if the latest top score is enough to trigger a detection.
+        final int currentTopIndex = sortedAverageScores[0].index;
+        final String currentTopLabel = labels.get(currentTopIndex);
+        final float currentTopScore = sortedAverageScores[0].score;
+        // If we've recently had another label trigger, assume one that occurs too
+        // soon afterwards is a bad result.
+        long timeSinceLastTop;
+        if (previousTopLabel.equals(SILENCE_LABEL) || (previousTopLabelTime == Long.MIN_VALUE)) {
+            timeSinceLastTop = Long.MAX_VALUE;
+        } else {
+            timeSinceLastTop = currentTimeMS - previousTopLabelTime;
+        }
+        boolean isNewCommand;
+        if ((currentTopScore > detectionThreshold) && (timeSinceLastTop > suppressionMs)) {
+            previousTopLabel = currentTopLabel;
+            previousTopLabelTime = currentTimeMS;
+            previousTopLabelScore = currentTopScore;
+            isNewCommand = true;
+        } else {
+            isNewCommand = false;
+        }
+        return new RecognitionResult(currentTopLabel, currentTopScore, isNewCommand);
+    }
+```
+
+The demo app updates its UI of results automatically based on the labels text file you copy into assets alongside your frozen graph, which means you can easily try out different models without needing to make any code changes. You will need to update `LABEL_FILENAME and MODEL_FILENAME` to point to the files you’ve added if you change the paths though.
+
+You can easily replace it with a model you’ve trained yourself. If you do this, you’ll need to make sure that the constants in the main `MainActivity Java` source file like `SAMPLE_RATE` and `SAMPLE_DURATION` match any changes you’ve made to the defaults while training. You’ll also see that there’s a Java version of the `RecognizeCommands` module that’s very similar to the C++ version in this tutorial. If you’ve tweaked parameters for that, you can also update them in `MainActivity` to get the same results as in your server testing.
 
 ### References, Credits and Further Readings
 
@@ -220,3 +512,7 @@ __Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogr
 * Medium: [Create an Audio Recorder for Android](https://medium.com/@ssaurel/create-an-audio-recorder-for-android-94dc7874f3d)
 * Medium: [Getting to Know the Mel Spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0)
 * Medium: [The dummy’s guide to MFCC](https://medium.com/prathena/the-dummys-guide-to-mfcc-aceab2450fd)
+* Medium: [Sound Classification with TensorFlow](https://medium.com/iotforall/sound-classification-with-tensorflow-8209bdb03dfb)
+* [Audio classification using Image classification techniques](https://www.codementor.io/vishnu_ks/audio-classification-using-image-classification-techniques-hx63anbx1)
+* [Simple Audio Recognition](https://www.tensorflow.org/tutorials/audio_recognition)
+* [Speech Recognition Using TensorFlow](http://androidkt.com/speech-recognition-using-tensorflow/)
