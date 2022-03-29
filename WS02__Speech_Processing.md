@@ -204,7 +204,7 @@ The app can be used as a starting point to implement a useful audio processing f
 __Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
 
 
-### 4. Audio Command Recognition
+### 4. (Optional) Audio Command Recognition
 
 This tutorial is based on the [Simple audio recognition: Recognizing keywords](https://www.tensorflow.org/tutorials/audio/simple_audio) tutorial by TensorFlow but makes it also work on a mobile phone. It shows how to build and run a simple speech recognition TF model. Once you’ve completed this tutorial, you’ll have an application that tries to classify a one second audio clip as either silence, an unknown word, “yes”, “no”, “up”, “down”, “left”, “right”, “on”, “off”, “stop”, or “go”.
 
@@ -233,9 +233,6 @@ Use Google Colab: [Simple audio recognition: Recognizing keywords](https://colab
   </td>
 </table>
 
-
-__Building / Training / Testing a Model:__
-
 You can train your model on your laptop, or on a server, and then use that pre-trained model on our mobile device. Alternatively, you can use an already [pre-trained model](http://download.tensorflow.org/models/speech_commands_v0.01.zip).
 
 
@@ -248,8 +245,6 @@ To request microphone, you should be requesting `RECORD_AUDIO` permission in you
 ```XML
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 ```
-
-__Microphone Permission:__
 
 Since Android 6.0 Marshmallow, the application will not be granted any permission at installation time. Instead, the application has to ask the user for a permission one-by-one at runtime.
 
@@ -267,8 +262,6 @@ public void onRequestPermissionsResult(int requestCode, String[] permissions, in
       }
  }
 ```
-
-__Recording Audio:__
 
 The `AudioRecord` class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. This is achieved by “pulling” (reading) the data from the `AudioRecord` object. The application is responsible for polling the AudioRecord object in time using `read(short[], int, int)`.
 
@@ -326,8 +319,6 @@ private void record() {
         record.release();
     }
 ```
-
-__Run TensorFlow Model:__
 
 A `TensorFlowInferenceInterface` class that provides a smaller API surface suitable for inference and summarizing the performance of model execution.
 
@@ -400,8 +391,6 @@ private void recognize() {
     Log.v(LOG_TAG, "End recognition");
 }
 ```
-
-__Recognize Commands:__
 
 `RecognizeCommands` class is fed the output of running the `TensorFlow` model over time, it averages the signals and returns information about a label when it has enough evidence to think that a recognized word has been found. The implementation is fairly small, just keeping track of the last few predictions and averaging them.
 
@@ -497,6 +486,8 @@ public RecognitionResult processLatestResults(float[] currentResults, long curre
 The demo app updates its UI of results automatically based on the labels text file you copy into assets alongside your frozen graph, which means you can easily try out different models without needing to make any code changes. You will need to update `LABEL_FILENAME and MODEL_FILENAME` to point to the files you’ve added if you change the paths though.
 
 You can easily replace it with a model you’ve trained yourself. If you do this, you’ll need to make sure that the constants in the main `MainActivity Java` source file like `SAMPLE_RATE` and `SAMPLE_DURATION` match any changes you’ve made to the defaults while training. You’ll also see that there’s a Java version of the `RecognizeCommands` module that’s very similar to the C++ version in this tutorial. If you’ve tweaked parameters for that, you can also update them in `MainActivity` to get the same results as in your server testing.
+
+
 
 ### References, Credits and Further Readings
 
