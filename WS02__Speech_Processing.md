@@ -200,7 +200,7 @@ The app can be used as a starting point to implement a useful audio processing f
 __Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
 
 
-### 4. (Optional) Audio Command Recognition
+### 4. (Optional) Example: Audio Command Recognition
 
 This tutorial is based on the [Simple audio recognition: Recognizing keywords](https://www.tensorflow.org/tutorials/audio/simple_audio) tutorial by TensorFlow but makes it also work on a mobile phone. It shows how to build and run a simple speech recognition TF model. Once you’ve completed this tutorial, you’ll have an application that tries to classify a one second audio clip as either silence, an unknown word, “yes”, “no”, “up”, “down”, “left”, “right”, “on”, “off”, “stop”, or “go”.
 
