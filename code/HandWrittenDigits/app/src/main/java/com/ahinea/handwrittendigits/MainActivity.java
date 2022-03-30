@@ -1,21 +1,22 @@
 package com.ahinea.handwrittendigits;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.graphics.PointF;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.List;
-import com.ahinea.handwrittendigits.models.Classifier;
+
 import com.ahinea.handwrittendigits.models.Classification;
+import com.ahinea.handwrittendigits.models.Classifier;
+import com.ahinea.handwrittendigits.models.TensorFlowLiteClassifier;
 import com.ahinea.handwrittendigits.views.DrawModel;
 import com.ahinea.handwrittendigits.views.DrawView;
 
-import com.ahinea.handwrittendigits.models.TensorFlowLiteClassifier;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
 
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try {
                     mClassifiers.add(
                             TensorFlowLiteClassifier.create(getAssets(), "TensorFlowLite",
-                                "converted_model.tflite", "labels.txt"));
+                                    "converted_model.tflite", "labels.txt"));
                 } catch (final Exception e) {
                     throw new RuntimeException("Error initializing classifiers!", e);
                 }

@@ -8,9 +8,10 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PointF;
 import android.graphics.Rect;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 public class DrawView extends View {
 
