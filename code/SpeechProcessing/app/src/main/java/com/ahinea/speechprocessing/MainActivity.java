@@ -1,20 +1,19 @@
 package com.ahinea.speechprocessing;
 
-import android.annotation.SuppressLint;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-@SuppressLint("RestrictedApi")
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
     private FloatingActionButton playButton;
     private FloatingActionButton pauseButton;
     private FloatingActionButton stopButton;
 
     private SoundVisualizer visualizer;
-
     private MainViewModel model;
 
     @Override
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         visualizer = findViewById(R.id.visualizer);
 
         // get data management model
-        model = ViewModelProviders.of(this).get(MainViewModel.class);
+        model = new ViewModelProvider(this).get(MainViewModel.class);
 
         // restore UI
         if (model.isRecordingInProgress()) {

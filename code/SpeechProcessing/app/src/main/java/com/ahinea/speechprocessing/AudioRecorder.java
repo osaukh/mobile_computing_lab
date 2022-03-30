@@ -1,5 +1,7 @@
 package com.ahinea.speechprocessing;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
@@ -10,6 +12,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.core.app.ActivityCompat;
 
 public class AudioRecorder {
 
@@ -58,6 +62,7 @@ public class AudioRecorder {
         return audioRecord != null && audioRecord.getRecordingState() == AudioRecord.RECORDSTATE_STOPPED;
     }
 
+    @SuppressLint("MissingPermission")
     public void startRecording() {
         audioRecord = new AudioRecord(
                 MediaRecorder.AudioSource.MIC,
