@@ -3,7 +3,7 @@
 
 ### 1. Speech Processing Fundamentals
 
-Run the tutorial in Google Colab:
+<mark>Run the tutorial in Google Colab:</mark>
 
 <table>
   <td>
@@ -73,7 +73,7 @@ You are provided the code of a sample app which reads the microphone input and s
 
 <img src="https://github.com/osaukh/mobile_computing_lab/blob/master/img/speechprocessing/speech_processing_screenshot.jpg" width="240">
 
-Run the app on your smartphone and undestand the code: 
+<mark>Run the app on your smartphone and undestand the code:</mark>
 * [Source code](code/SpeechProcessing) (kudos for some parts of the code to Jakub Lukac).
 * When running the app on your smartphone for the first time, grant it permissions to access the microphone: `Settings -> Apps -> SpeechProcessing -> Permissions`.
 
@@ -197,7 +197,7 @@ public class SoundVisualizer extends View implements AudioRecorderDataReceiveLis
 
 The app can be used as a starting point to implement a useful audio processing function.
 
-__Exercise:__ Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
+<mark>__Exercise:__</mark> Extend the SpeechProcessing app to periodically compute a spectogram from a fragment of the signal and display the results on the screen.
 
 
 ### 4. (Optional) Example: Audio Command Recognition
@@ -212,7 +212,7 @@ This tutorial is based on the [Simple audio recognition: Recognizing keywords](h
 * [App Source Code](https://github.com/Thumar/audio-recognition)
 
 
-__Follow the TensorFlow tutorial:__
+<mark>Follow the TensorFlow tutorial:</mark>
 
 Use Google Colab: [Simple audio recognition: Recognizing keywords](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/audio/simple_audio.ipynb)
 
@@ -232,7 +232,7 @@ Use Google Colab: [Simple audio recognition: Recognizing keywords](https://colab
 You can train your model on your laptop, or on a server, and then use that pre-trained model on our mobile device. Alternatively, you can use an already [pre-trained model](http://download.tensorflow.org/models/speech_commands_v0.01.zip).
 
 
-__Android App:__
+<mark>Run the Android app:</mark>
 
 Android [app source code](https://github.com/Thumar/audio-recognition). You need to copy model files to the assets folder and specify correct paths in `MainActivity.java`.
 

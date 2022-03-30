@@ -4,7 +4,7 @@
 
 TensorFlow is a programming paradigm that Google developed internally for Machine Learning. TensorFlow follows a Dataflow-like paradigm. TensorFlow programs get converted into a directed graph. This graph represents a dataflow computation with data flowing from nodes via the graph edges. Each node has multiple inputs and outputs and it represents a certain operation. Most of the data that flows in the graph is represented as Tensor. Tensors are typed arrays of arbitrary dimensions — a construct quite useful when your are dealing with Matrices or system of equations.
 
-__Follow the quickstart tutorial__ which uses Keras (a high-level neural network library that runs on top of TensorFlow):
+<mark>Follow the quickstart tutorial</mark> which uses Keras (a high-level neural network library that runs on top of TensorFlow):
 
 <table>
   <td>
@@ -23,16 +23,6 @@ __Follow the quickstart tutorial__ which uses Keras (a high-level neural network
 
 TensorFlow Lite is a set of tools to help developers run TensorFlow models on mobile, embedded, and IoT devices. It enables on-device machine learning inference with low latency and a small binary size.
 
-TensorFlow Lite consists of two main components:
-* __TensorFlow Lite interpreter__, which runs specially optimized models on many different hardware types, including mobile phones, embedded Linux devices, and microcontrollers.
-* __TensorFlow Lite converter__, which converts TensorFlow models into an efficient form for use by the interpreter, and can introduce optimizations to improve binary size and performance.
-
-<img src="https://camo.githubusercontent.com/e2dc220875ce6c47a653c4a3c8bc7ccfe4c578958301095adbafbfa6e34f3618/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74666c6974652d6172636869746563747572652e6a7067" width=400>
-
-__Read about TF Lite and Android NN API:__
-* [TensorFlow Lite converter](https://www.tensorflow.org/lite/convert)
-* [Android NN API](https://developer.android.com/ndk/guides/neuralnetworks)
-
 TF Lite is designed to make it easy to perform machine learning on devices, "at the edge" of the network, instead of sending data back and forth from a server. For developers, performing machine learning on-device can help improve:
 
 * Latency: there's no round-trip to a server
@@ -40,7 +30,16 @@ TF Lite is designed to make it easy to perform machine learning on devices, "at 
 * Connectivity: an Internet connection isn't required
 * Power consumption: network connections are power hungry
 
-TF Lite works with a huge range of devices, from tiny microcontrollers to powerful mobile phones.
+TensorFlow Lite consists of two main components:
+* __TensorFlow Lite converter__, which converts TensorFlow models into an efficient form for use by the interpreter, and can introduce optimizations to improve binary size and performance.
+* __TensorFlow Lite interpreter__, which runs specially optimized models on many different hardware types, including mobile phones, embedded Linux devices, and microcontrollers.
+
+<img src="https://camo.githubusercontent.com/e2dc220875ce6c47a653c4a3c8bc7ccfe4c578958301095adbafbfa6e34f3618/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74666c6974652d6172636869746563747572652e6a7067" width=400>
+
+<mark>Read about TF Lite and Android NN API:</mark>
+* [TensorFlow Lite converter](https://www.tensorflow.org/lite/convert)
+* [Android NN API](https://developer.android.com/ndk/guides/neuralnetworks)
+
 
 ### 3. Example: Handwritten Digits
 
@@ -52,7 +51,7 @@ This is a handwritten character image (MNIST) classifier that can run on any And
 * [App Source Code](https://github.com/llSourcell/A_Guide_to_Running_Tensorflow_Models_on_Android/tree/master/mnistandroid)
 
 
-__Run the tutorial to train a model:__
+<mark>Run the tutorial to train a model:</mark>
 
 <table>
   <td>
@@ -68,11 +67,11 @@ __Run the tutorial to train a model:__
 </table>
 
 
-__Android app:__
-
-* <a href="https://developer.android.com/ndk/downloads/">Download and install Android NDK</a> (you should get an automatic invitation to install NDK from Android Studio once you try to build an app which requires its support).
+<mark>Run the Android app:</mark>
 
 * Clone and run the [HandWrittenDigits Android app](https://github.com/osaukh/mobile_computing_lab/tree/master/code/HandWrittenDigits). It requires that you use TensorFlow verion > 1.9.1. Examine the code and run it on your hardware. You can also experiment with the model above and use your own model (copy your `.tflite` file to `HandWrittenDigits/app/src/main/assets/`).
+
+* <a href="https://developer.android.com/ndk/downloads/">Download and install Android NDK</a> (you should get an automatic invitation to install NDK from Android Studio once you try to build an app which requires its support).
 
 
 ***

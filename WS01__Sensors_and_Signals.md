@@ -3,7 +3,7 @@
 
 ### 1. Install Android Studio on Your Laptop
 
-Follow instructions for your operating system:
+<mark>Follow instructions</mark> for your operating system:
 * [Install Android Studio](https://developer.android.com/studio/install.html)
 
 ### 2. Android Hello World App
@@ -12,7 +12,7 @@ Goal: Make sure you have a working system, create your first Android app and run
 
 <img src="https://camo.githubusercontent.com/1c0ee94e6172d92afe6e1fc566bcc9ec236a8fbe2266776c5d9f2e150e9be20a/687474703a2f2f6d6174656f6a2e636f6d2f7075626c69632f696d616765732f6d6f766965732d6170702f73637265656e73686f745f73746570312e706e67" width="200">
 
-__Follow instructions:__ 
+<mark>Follow instructions:</mark>
 * [Build Your First Android App](https://developer.android.com/training/basics/firstapp)
 
 In case you have troubles activating your phone or running an app on your phone, please check the following:
@@ -30,12 +30,12 @@ Goal: Learn about the Android sensor framework, which is used to find the availa
 </tr>
 </table>
 
-__Follow instructions:__
+<mark>Follow instructions:</mark>
 * Read: [Sensors overview](https://developer.android.com/guide/topics/sensors/sensors_overview)
 * Follow the steps: [3.1: Getting sensor data (do both Task 1 and Task 2)](https://developer.android.com/codelabs/advanced-android-training-sensor-data#0)
-* __Exercise (Task 1):__ Number the sensors in the SensorSurvey list on the screen 
-* __Exercise (Task 2):__ Add and display accelerometer values
-* __Exercise (Task 2):__ Modify the SensorListeners app such that the background color of the app changes in response to the light level (see "6. Coding Challenge" for a tip).
+* <mark>__Exercise (Task 1):__</mark> Number the sensors in the SensorSurvey list on the screen 
+* <mark>__Exercise (Task 2):__</mark> Add and display accelerometer values
+* <mark>__Exercise (Task 2):__</mark> Modify the SensorListeners app such that the background color of the app changes in response to the light level (see "6. Coding Challenge" for a tip).
 
 
 ## Your Task
