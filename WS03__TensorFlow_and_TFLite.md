@@ -69,10 +69,7 @@ This is a handwritten character image (MNIST) classifier that can run on any And
 
 <mark>Run the Android app:</mark>
 
-* Clone and run the [HandWrittenDigits Android app](https://github.com/osaukh/mobile_computing_lab/tree/master/code/HandWrittenDigits). It requires that you use TensorFlow verion > 1.9.1. Examine the code and run it on your hardware. You can also experiment with the model above and use your own model (copy your `.tflite` file to `HandWrittenDigits/app/src/main/assets/`).
-
-* <a href="https://developer.android.com/ndk/downloads/">Download and install Android NDK</a> (you should get an automatic invitation to install NDK from Android Studio once you try to build an app which requires its support).
-
+* Clone and run the [HandWrittenDigits Android app](https://github.com/osaukh/mobile_computing_lab/tree/master/code/HandWrittenDigits). It requires that you use TensorFlow verion > 1.9.1. Examine the code and run it on your hardware. You can also experiment with the model above and use your own model (copy your `.tflite` file to `HandWrittenDigits/app/src/main/ml/`).
 
 ***
 ## References, Credits and Further Readings

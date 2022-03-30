@@ -74,7 +74,7 @@ You are provided the code of a sample app which reads the microphone input and s
 <img src="https://github.com/osaukh/mobile_computing_lab/blob/master/img/speechprocessing/speech_processing_screenshot.jpg" width="240">
 
 <mark>Run the app on your smartphone and undestand the code:</mark>
-* [Source code](code/SpeechProcessing) (kudos for some parts of the code to Jakub Lukac).
+* [SpeechProcessing Android App](code/SpeechProcessing) (kudos for some parts of the code to Jakub Lukac).
 * When running the app on your smartphone for the first time, grant it permissions to access the microphone: `Settings -> Apps -> SpeechProcessing -> Permissions`.
 
 
