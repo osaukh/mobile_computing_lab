@@ -88,7 +88,7 @@ The Android application shows how to light-retrain a model (transfer learning) a
 
 ## Cookbook
 
-#### Step 1: Base and head models
+#### Step 1: Prepare base and head models
 
 Similar to the above example, you will need to train a base model and prepare a head model. You can experiment with different base models and different datasets you use for model pretraining. 
 
