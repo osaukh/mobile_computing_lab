@@ -66,12 +66,12 @@ The Android application shows how to light-retrain a model (transfer learning) a
 
 <table>
   <td>
-    <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/code/ModelPersonalization/WS04_TransferLearning_Personalization.ipynb">
+    <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/colab/WS04_TransferLearning_Personalization.ipynb">
     <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
     Run in Google Colab</a>
   </td>
   <td>
-    <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/code/ModelPersonalization/WS04_TransferLearning_Personalization.ipynb">
+    <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/colab/WS04_TransferLearning_Personalization.ipynb">
     <img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />
     View source on GitHub</a>
   </td>
