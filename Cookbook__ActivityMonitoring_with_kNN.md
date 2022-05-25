@@ -205,7 +205,7 @@ You can use any programming language you want! I highly recommend to use Python.
 
 <img src="https://camo.githubusercontent.com/f17f3b410d883db9e2d2e900294cd255765b3871ab0fdb6c5ab76cf0887effaf/68747470733a2f2f6171696273616565642e6769746875622e696f2f696d672f6861725f6170705f73637265656e73686f742e706e67" width="200">
 
-(This is just an example)
+(This is just an example. Note that kNN does not yield probabilities.)
 
 __Important:__ Please do NOT use Google Play Services Activity Recognition API but you can use it to compare your own app performance.
 
