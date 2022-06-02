@@ -77,8 +77,22 @@ The Android application shows how to light-retrain a model (transfer learning) a
   </td>
 </table>
 
-*    [On-device Model Personalization](https://github.com/osaukh/mobile_computing_lab/blob/master/code/ModelPersonalization/)
+*  App: [On-device Model Personalization](https://github.com/osaukh/mobile_computing_lab/blob/master/code/ModelPersonalization/)
 
+Sample app above uses a pretrained MobileNetV2 model from a library. The code below shows how to train a samlpe base model from scratch and use it together with provided app (with a few very minor modifications):
+
+<table>
+  <td>
+    <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/colab/WS04_TransferLearning_Personalization_CustomModel.ipynb">
+    <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
+    Run in Google Colab</a>
+  </td>
+  <td>
+    <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/colab/WS04_TransferLearning_Personalization_CustomModel.ipynb">
+    <img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />
+    View source on GitHub</a>
+  </td>
+</table>
 
 ***
 
