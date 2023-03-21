@@ -1,4 +1,4 @@
-# Workshop 3: TensorFlow and TF Lite
+# Workshop 2: TensorFlow and TF Lite
 
 ### 1. TensorFlow
 
@@ -55,12 +55,12 @@ This is a handwritten character image (MNIST) classifier that can run on any And
 
 <table>
   <td>
-    <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/colab/WS03--TensorFlow--HandwrittenDigits.ipynb">
+    <a target="_blank" href="https://colab.research.google.com/github/osaukh/mobile_computing_lab/blob/master/colab/WS02_TensorFlow_HandwrittenDigits.ipynb">
     <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />
     Run in Google Colab</a>
   </td>
   <td>
-    <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/colab/WS03--TensorFlow--HandwrittenDigits.ipynb">
+    <a target="_blank" href="https://github.com/osaukh/mobile_computing_lab/blob/master/colab/WS02--TensorFlow--HandwrittenDigits.ipynb">
     <img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />
     View source on GitHub</a>
   </td>

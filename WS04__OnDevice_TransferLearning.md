@@ -1,4 +1,4 @@
-# Workshop 4: On-device Transfer Learning
+# Workshop 4: On-device Learning
 
 ### Activity Monitoring: What should you have by now?
 

@@ -203,9 +203,8 @@ You can use any programming language you want! I highly recommend to use Python.
 
 #### Step 5: Program kNN in your smartphone and display classification on the screen
 
-<img src="https://camo.githubusercontent.com/f17f3b410d883db9e2d2e900294cd255765b3871ab0fdb6c5ab76cf0887effaf/68747470733a2f2f6171696273616565642e6769746875622e696f2f696d672f6861725f6170705f73637265656e73686f742e706e67" width="200">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs40860-021-00147-0/MediaObjects/40860_2021_147_Fig2_HTML.png?as=webp" width="800">
 
-(This is just an example. Note that kNN does not yield probabilities.)
 
 __Important:__ Please do NOT use Google Play Services Activity Recognition API but you can use it to compare your own app performance.
 
