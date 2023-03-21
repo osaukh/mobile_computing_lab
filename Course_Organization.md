@@ -32,7 +32,7 @@ Workshops will help you to get started with the topics:
 *   [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
 *   [Workshop 2: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__TensorFlow_and_TFLite.md)
 *   [Workshop 3: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__Speech_Processing.md)
-*   [Workshop 4: On-device transfer learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_TransferLearning.md)
+*   [Workshop 4: On-device learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_Learning.md)
 
 
 Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx or in the Lab. Code troubleshooting: use __Slack for asking questions__. Attend individual coaching sessions and ask TA for help or send us an email.
