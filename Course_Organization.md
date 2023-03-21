@@ -2,12 +2,12 @@
 
 ## Basic Information
  
-*   TUG Online: [Mobile Computing Lab (MCL), SS'22](https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=256443)
+*   TUG Online: [Mobile Computing Lab (MCL), SS'23](https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=256443)
 *   Instructor: [Olga Saukh](http://www.olgasaukh.com) ([TUG business card](https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=BC91EB43629EBA38"))
-*   TA: Peter Prodinger (peter.prodinger at student.tugraz.at)
+*   TA: Michael Pölzl (michael.poelzl at student.tugraz.at)
 *   [MCL course materials on GitHub](https://github.com/osaukh/mobile_computing_lab)
 
-MCL starts on __Wed, 23.03.2022 at 3pm__ over Webex. Access details can be found under "Announcements" in the TeachCenter.
+MCL starts on __Wed, 22.03.2023 at 3pm__ over Webex. Access details can be found under "Announcements" in the TeachCenter.
 
 Join the __MCL Slack channel__ to connect to other students enrolled in the class. Access details can be found under "Announcements" in the TeachCenter.
 
@@ -30,12 +30,12 @@ This course will provide a solid background for the above points. During the wor
 
 Workshops will help you to get started with the topics:
 *   [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
-*   [Workshop 2: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__Speech_Processing.md)
-*   [Workshop 3: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__TensorFlow_and_TFLite.md)
+*   [Workshop 2: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__TensorFlow_and_TFLite.md)
+*   [Workshop 3: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__Speech_Processing.md)
 *   [Workshop 4: On-device transfer learning](https://github.com/osaukh/mobile_computing_lab/blob/master/WS04__OnDevice_TransferLearning.md)
 
 
-Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx. Code troubleshooting: use __Slack for asking questions__. Attend in-person Q&A sessions and ask Peter for help or send him an email (peter.prodinger at student.tugraz.at). Last resort: send an email to Olga (saukh at tugraz.at) and schedule a separate appointment.
+Workshops / discussions / progress reviews / demos: __3-5pm on every scheduled occasion__ over WebEx or in the Lab. Code troubleshooting: use __Slack for asking questions__. Attend individual coaching sessions and ask TA for help or send us an email.
 
 
 ## Schedule
