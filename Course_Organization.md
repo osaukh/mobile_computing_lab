@@ -2,7 +2,7 @@
 
 ## Basic Information
  
-*   TUG Online: [Mobile Computing Lab (MCL), SS'23](https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=256443)
+*   TUG Online: [Mobile Computing Lab (MCL), SS'23](https://online.tugraz.at/tug_online/wbLv.wbShowLVDetail?pStpSpNr=333665)
 *   Instructor: [Olga Saukh](http://www.olgasaukh.com) ([TUG business card](https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=BC91EB43629EBA38"))
 *   TA: Michael Pölzl (michael.poelzl at student.tugraz.at)
 *   [MCL course materials on GitHub](https://github.com/osaukh/mobile_computing_lab)
@@ -100,7 +100,7 @@ Check examples of <a href="http://www.olgasaukh.com/mcl.html">successfully compl
 
 ### Assistance
 * 	Olga is available in WebEx 3-5pm every scheduled appointment.
-* 	Peter (peter.prodinger at student.tugraz.at) will help you to fix coding issues in the lab (Technische Informatik Nord, IE01074). Approach him on Slack or email him if you need help.
+* 	Michael (michael.poelzl at student.tugraz.at) will help you to fix coding issues in the lab (Technische Informatik Nord, IE01074). Approach him on Slack or email him if you need help.
 * 	It's easier to help if you use GitHub / GitLab / Google Colab and we can access your code!
 
 ### Hints
