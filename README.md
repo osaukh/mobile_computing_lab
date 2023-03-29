@@ -9,8 +9,8 @@ The course provides an introduction to the current research trends in the area o
 		* [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
 		* [Cookbook: Activity Monitoring with kNN](https://github.com/osaukh/mobile_computing_lab/blob/master/Cookbook__ActivityMonitoring_with_kNN.md) (Option 1)
 *    __2023-03-29 - WebEx__ (Olga)
-		* [Workshop 2: TensorFlow and TF Lite](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__TensorFlow_and_TFLite.md)
-		* [Workshop 3: Video and speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__Speech_Processing.md)
+		* [Workshop 2: TensorFlow / TF Lite and Performance Acceleration](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__TensorFlow_and_TFLite.md)
+		* [Workshop 3: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__Speech_Processing.md)
 
 *    2023-04-19 - WebEx: Individual coaching (Olga)
 *    2023-04-26 - WebEx: Individual coaching (Olga)
