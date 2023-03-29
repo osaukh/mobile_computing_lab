@@ -41,7 +41,14 @@ TensorFlow Lite consists of two main components:
 * [Android NN API](https://developer.android.com/ndk/guides/neuralnetworks)
 
 
-### 3. Example: Handwritten Digits
+### 3. Examples
+
+<mark>Experiment with the following apps and compare performance across different ML frameworks. Take a closer close at the inferenve they provide:</mark>
+* [TensorFlow Lite Example Library](https://github.com/tensorflow/examples/tree/master/lite/examples)
+* [NCNN Example Library](https://github.com/cmdbug/YOLOv5_NCNN)
+
+
+### 4. Example: Handwritten Digits
 
 This is a handwritten character image (MNIST) classifier that can run on any Android device. The app stores a model  set of images (0-9) that we can cycle through and classify in order. It uses a pre-trained model to perform inference on the device. This idea can be applied to any images, both by using the camera and by pulling from the Web. We're using preloaded images so we can run the app in a simulator (no need for the device since it doesn't require a camera).
 
