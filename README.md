@@ -20,4 +20,4 @@ The course has been rewamped and continues to evolve.
 [Examples of successfully completed MCL projects](https://sites.google.com/view/olgasaukh/student-demos)
 
 ### Contact: 
-Olga Saukh: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
+[saukh@tugraz.at](mailto:saukh@tugraz.at) 
