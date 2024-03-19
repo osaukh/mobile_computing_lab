@@ -4,7 +4,7 @@ The course provides an introduction to the current research trends in the area o
 
 ### Course materials 2016-2023. 
 
-The course has been rewamped and continues to evolve. 
+The course has been rewamped and continues to evolve.
 
 *   [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/Course_Organization.md)
 *   [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
@@ -18,3 +18,6 @@ The course has been rewamped and continues to evolve.
 
 ### Completed projects
 [Examples of successfully completed MCL projects](https://sites.google.com/view/olgasaukh/student-demos)
+
+### Contact: 
+Olga Saukh: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
