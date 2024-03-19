@@ -2,7 +2,9 @@
 
 The course provides an introduction to the current research trends in the area of smartphones. The course will be based on a programming project, where students will form groups of two to develop a smartphone app for Android. To program a smartphone app, a developer needs to be familiar with (1) the signals and data that smartphones can gather, and (2) the mathematical tools necessary to process this data. We will use state-of-the-art algorithms, signal processing, and machine learning techniques to develop exciting mobile applications.
 
-### Course materials 2016-2023. The course has been rewamped and continue to evolve. Contact: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
+### Course materials 2016-2023. 
+
+The course has been rewamped and continue to evolve. Contact: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
 
 *   [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/Course_Organization.md)
 	[Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
