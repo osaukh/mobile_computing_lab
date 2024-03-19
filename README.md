@@ -7,8 +7,8 @@ The course provides an introduction to the current research trends in the area o
 The course has been rewamped and continues to evolve. Contact: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
 
 *   [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/Course_Organization.md)
-	[Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
-	[Cookbook: Activity Monitoring with kNN](https://github.com/osaukh/mobile_computing_lab/blob/master/Cookbook__ActivityMonitoring_with_kNN.md)
+*   [Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
+*   [Cookbook: Activity Monitoring with kNN](https://github.com/osaukh/mobile_computing_lab/blob/master/Cookbook__ActivityMonitoring_with_kNN.md)
 *   [Workshop 2: TensorFlow / TF Lite and Performance Acceleration](https://github.com/osaukh/mobile_computing_lab/blob/master/WS02__TensorFlow_and_TFLite.md)
 *   [Workshop 3: Speech processing](https://github.com/osaukh/mobile_computing_lab/blob/master/WS03__Speech_Processing.md)
 *   [Progress review](https://github.com/osaukh/mobile_computing_lab/blob/master/Progress_Reviews.md)
