@@ -4,7 +4,7 @@ The course provides an introduction to the current research trends in the area o
 
 ### Course materials 2016-2023. 
 
-The course has been rewamped and continue to evolve. Contact: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
+The course has been rewamped and continues to evolve. Contact: [saukh@tugraz.at](mailto:saukh@tugraz.at) 
 
 *   [Course organization](https://github.com/osaukh/mobile_computing_lab/blob/master/Course_Organization.md)
 	[Workshop 1: Sensors and signals](https://github.com/osaukh/mobile_computing_lab/blob/master/WS01__Sensors_and_Signals.md)
